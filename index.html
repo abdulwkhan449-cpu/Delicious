@@ -1,1383 +1,2552 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Delicious Restaurant — Premium Halal Dining in London</title>
-  
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Experience beautifully prepared halal cuisine in London at Delicious Restaurant. Authentic flavours, premium ingredients, and online ordering available." />
-  <meta name="keywords" content="halal restaurant London, premium halal food, Delicious Restaurant, halal dining, order halal online" />
-  <link rel="canonical" href="https://deliciousrestaurant.co.uk/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Restaurant — Premium Halal Dining in London</title>
+    <meta name="description" content="Experience beautifully prepared halal cuisine in London at Delicious Restaurant. Authentic flavours, premium ingredients, and online ordering available." />
+    <meta name="keywords" content="halal restaurant London, premium halal food, Delicious Restaurant, halal dining, order halal online" />
+    <link rel="canonical" href="https://deliciousrestaurant.co.uk/" />
 
-  <!-- Open Graph / Social Media -->
-  <meta property="og:title" content="Delicious Restaurant — Premium Halal Dining in London" />
-  <meta property="og:description" content="Authentic Flavours. Deliciously Halal. Experience premium halal cuisine in London." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://deliciousrestaurant.co.uk/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Delicious Restaurant — Premium Halal Dining in London" />
+    <meta property="og:description" content="Authentic Flavours. Deliciously Halal. Experience premium halal cuisine in London." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://deliciousrestaurant.co.uk/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
 
-  <!-- JSON-LD Structured Data for SEO -->
-  <script type="application/ld+json">
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Restaurant",
-      "name": "Delicious Restaurant",
-      "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      "description": "Premium halal restaurant based in London, offering authentic flavours and freshly prepared dishes.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "London",
-        "addressCountry": "GB"
-      },
-      "servesCuisine": "Halal, British, Asian",
-      "priceRange": "££",
-      "telephone": "+44-20-7946-0958",
-      "openingHours": "Mo-Su 12:00-22:00",
-      "url": "https://deliciousrestaurant.co.uk/"
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Delicious Restaurant",
+        "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "description": "Premium halal restaurant based in London, offering authentic flavours and freshly prepared dishes.",
+        "address": {"@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB"},
+        "servesCuisine": "Halal, British, Asian",
+        "priceRange": "££",
+        "telephone": "+44-20-7946-0958",
+        "openingHours": "Mo-Su 12:00-22:00",
+        "url": "https://deliciousrestaurant.co.uk/"
     }
-  </script>
+    </script>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-  <style>
-    /* ---------- RESET ---------- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Manrope', sans-serif;
-      color: #202020;
-      background: #F8F4EC;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-    img {
-      max-width: 100%;
-      display: block;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    ul {
-      list-style: none;
-    }
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-    /* ---------- TYPOGRAPHY ---------- */
-    h1, h2, h3, h4 {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-    }
-    .section-label {
-      font-family: 'Manrope', sans-serif;
-      font-weight: 600;
-      font-size: 0.75rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #C8A45D;
-      margin-bottom: 0.5rem;
-    }
-    .section-title {
-      font-size: 3.2rem;
-      font-weight: 700;
-      line-height: 1.15;
-      margin-bottom: 1.2rem;
-    }
-    .section-sub {
-      font-size: 1.1rem;
-      font-weight: 300;
-      color: #4a4a4a;
-      max-width: 600px;
-    }
-    .text-center {
-      text-align: center;
-    }
-    .mx-auto {
-      margin-left: auto;
-      margin-right: auto;
-    }
+    <style>
+        :root {
+            --ivory: #FAF7F2;
+            --cream: #F3EAE0;
+            --white: #FFFFFF;
+            --mocha: #8A6048;
+            --mocha-dark: #6F4B38;
+            --caramel: #B9855A;
+            --terracotta: #C98F72;
+            --charcoal: #302823;
+            --charcoal-light: #5A4A40;
+            --beige-border: #E8DCCF;
+            --shadow-sm: 0 2px 12px rgba(48, 40, 35, 0.05);
+            --shadow-md: 0 8px 28px rgba(48, 40, 35, 0.08);
+            --shadow-lg: 0 18px 50px rgba(48, 40, 35, 0.1);
+            --shadow-xl: 0 28px 70px rgba(48, 40, 35, 0.14);
+            --transition: 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+            --transition-fast: 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+            --radius: 14px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --font-primary: 'Poppins', sans-serif;
+            --max-width: 1320px;
+            --header-height: 80px;
+        }
 
-    /* ---------- BUTTONS ---------- */
-    .btn {
-      display: inline-block;
-      font-family: 'Manrope', sans-serif;
-      font-weight: 600;
-      font-size: 0.9rem;
-      letter-spacing: 0.03em;
-      padding: 0.9rem 2.2rem;
-      border-radius: 50px;
-      border: none;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-align: center;
-      min-height: 52px;
-    }
-    .btn-primary {
-      background: #12372A;
-      color: #fff;
-    }
-    .btn-primary:hover {
-      background: #1a4f3b;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(18, 55, 42, 0.2);
-    }
-    .btn-secondary {
-      background: transparent;
-      color: #12372A;
-      border: 1.5px solid #12372A;
-    }
-    .btn-secondary:hover {
-      background: #12372A;
-      color: #fff;
-      transform: translateY(-2px);
-    }
-    .btn-gold {
-      background: #C8A45D;
-      color: #fff;
-    }
-    .btn-gold:hover {
-      background: #b8944a;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(200, 164, 93, 0.3);
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: var(--font-primary);
+            color: var(--charcoal);
+            background: var(--ivory);
+            line-height: 1.7;
+            overflow-x: hidden;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color var(--transition-fast);
+        }
+        ul {
+            list-style: none;
+        }
+        button {
+            cursor: pointer;
+            font-family: var(--font-primary);
+            border: none;
+            background: none;
+        }
+        input,
+        textarea,
+        select {
+            font-family: var(--font-primary);
+            font-size: 0.9rem;
+            border: none;
+            outline: none;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
-    /* ---------- NAVBAR ---------- */
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      padding: 0 2rem;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      transition: all 0.4s ease;
-      background: transparent;
-    }
-    .navbar.scrolled {
-      background: rgba(248, 244, 236, 0.95);
-      backdrop-filter: blur(12px);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04);
-      height: 76px;
-    }
-    .nav-logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 700;
-      font-size: 1.8rem;
-      letter-spacing: 0.05em;
-      color: #fff;
-      transition: color 0.3s;
-      line-height: 1.1;
-    }
-    .nav-logo small {
-      display: block;
-      font-family: 'Manrope', sans-serif;
-      font-weight: 300;
-      font-size: 0.55rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      opacity: 0.7;
-    }
-    .navbar.scrolled .nav-logo {
-      color: #12372A;
-    }
+        .section-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--caramel);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.7rem;
+            margin-bottom: 0.8rem;
+        }
+        .section-label::before {
+            content: '';
+            width: 36px;
+            height: 1.5px;
+            background: var(--caramel);
+            border-radius: 2px;
+        }
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            font-weight: 700;
+            line-height: 1.18;
+            letter-spacing: -0.02em;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+        .section-sub {
+            font-size: 0.98rem;
+            font-weight: 300;
+            color: var(--charcoal-light);
+            max-width: 580px;
+            line-height: 1.8;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 2.5rem;
-    }
-    .nav-links a {
-      font-family: 'Manrope', sans-serif;
-      font-weight: 500;
-      font-size: 0.85rem;
-      letter-spacing: 0.02em;
-      color: rgba(255, 255, 255, 0.85);
-      transition: color 0.3s;
-      position: relative;
-    }
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 0%;
-      height: 2px;
-      background: #C8A45D;
-      transition: width 0.3s ease;
-    }
-    .nav-links a:hover {
-      color: #fff;
-    }
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-    .navbar.scrolled .nav-links a {
-      color: #202020;
-    }
-    .navbar.scrolled .nav-links a:hover {
-      color: #12372A;
-    }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            font-weight: 500;
+            font-size: 0.85rem;
+            letter-spacing: 0.04em;
+            padding: 0.95rem 2.3rem;
+            border-radius: 50px;
+            transition: all var(--transition);
+            text-align: center;
+            min-height: 50px;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+            border: 1.5px solid transparent;
+            cursor: pointer;
+        }
+        .btn i {
+            font-size: 0.9rem;
+        }
+        .btn-primary {
+            background: var(--mocha);
+            color: var(--white);
+            border-color: var(--mocha);
+        }
+        .btn-primary:hover {
+            background: var(--mocha-dark);
+            border-color: var(--mocha-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(111, 75, 56, 0.3);
+        }
+        .btn-caramel {
+            background: var(--caramel);
+            color: var(--white);
+            border-color: var(--caramel);
+        }
+        .btn-caramel:hover {
+            background: #A9744E;
+            border-color: #A9744E;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(185, 133, 90, 0.35);
+        }
+        .btn-outline-mocha {
+            background: transparent;
+            color: var(--mocha);
+            border-color: var(--mocha);
+        }
+        .btn-outline-mocha:hover {
+            background: var(--mocha);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(138, 96, 72, 0.25);
+        }
+        .btn-outline-light {
+            background: transparent;
+            color: var(--white);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        .btn-outline-light:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+        }
+        .btn-sm {
+            padding: 0.6rem 1.4rem;
+            font-size: 0.75rem;
+            min-height: 38px;
+        }
+        .btn-lg {
+            padding: 1.05rem 2.6rem;
+            font-size: 0.92rem;
+            min-height: 54px;
+        }
 
-    .nav-cta {
-      display: flex;
-      gap: 0.8rem;
-      align-items: center;
-    }
-    .nav-cta .btn {
-      padding: 0.5rem 1.4rem;
-      font-size: 0.75rem;
-      min-height: 40px;
-    }
-    .nav-cta .btn-primary {
-      background: #C8A45D;
-      color: #fff;
-    }
-    .nav-cta .btn-primary:hover {
-      background: #b8944a;
-    }
-    .nav-cta .btn-secondary {
-      border-color: rgba(255, 255, 255, 0.5);
-      color: rgba(255, 255, 255, 0.8);
-    }
-    .nav-cta .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: #fff;
-      color: #fff;
-    }
-    .navbar.scrolled .nav-cta .btn-secondary {
-      border-color: #12372A;
-      color: #12372A;
-    }
-    .navbar.scrolled .nav-cta .btn-secondary:hover {
-      background: #12372A;
-      color: #fff;
-    }
+        /* ============ NAVBAR (MODIFIED) ============ */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            transition: all var(--transition);
+            /* initial: solid background, no blur, no margin, no border-radius */
+            background: var(--ivory);
+            box-shadow: 0 2px 12px rgba(48, 40, 35, 0.05);
+            border-radius: 0;
+        }
+        .navbar.scrolled {
+            /* scrolled: glass blur, margin from top, rounded corners */
+            background: rgba(250, 247, 242, 0.72);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            box-shadow: 0 8px 30px rgba(48, 40, 35, 0.1);
+            height: 64px;
+            padding: 0 1.8rem;
+            top: 0.8rem;
+            left: 1.5rem;
+            right: 1.5rem;
+            border-radius: 50px;
+        }
+        .navbar.scrolled .nav-logo,
+        .navbar .nav-logo {
+            color: var(--charcoal);
+            transition: color var(--transition);
+        }
+        .navbar.scrolled .nav-links a,
+        .navbar .nav-links a {
+            color: rgba(48, 40, 35, 0.75);
+        }
+        .navbar.scrolled .nav-links a:hover,
+        .navbar .nav-links a:hover {
+            color: var(--charcoal);
+        }
+        .navbar.scrolled .nav-cta .btn-outline-mocha,
+        .navbar .nav-cta .btn-outline-mocha {
+            border-color: rgba(138, 96, 72, 0.5);
+            color: var(--mocha);
+        }
+        .navbar.scrolled .nav-cta .btn-outline-mocha:hover,
+        .navbar .nav-cta .btn-outline-mocha:hover {
+            background: var(--mocha);
+            color: var(--white);
+        }
 
-    /* Mobile Hamburger */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      background: none;
-      border: none;
-      padding: 5px;
-      z-index: 1001;
-    }
-    .hamburger span {
-      display: block;
-      width: 28px;
-      height: 2px;
-      background: #fff;
-      transition: all 0.3s ease;
-    }
-    .navbar.scrolled .hamburger span {
-      background: #12372A;
-    }
-    .hamburger.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-    .hamburger.active span:nth-child(2) {
-      opacity: 0;
-    }
-    .hamburger.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-    }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            font-weight: 700;
+            font-size: 1.35rem;
+            letter-spacing: 0.05em;
+        }
+        .nav-logo .logo-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--caramel);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+        .nav-logo .logo-text span {
+            display: block;
+            font-size: 0.5rem;
+            font-weight: 400;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            opacity: 0.55;
+            color: var(--charcoal-light);
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .nav-links a {
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            position: relative;
+            padding: 0.3rem 0;
+            transition: color var(--transition-fast);
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: var(--caramel);
+            border-radius: 2px;
+            transition: width var(--transition);
+        }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        .nav-cta {
+            display: flex;
+            gap: 0.6rem;
+            align-items: center;
+        }
+        .nav-cta .btn {
+            padding: 0.5rem 1.2rem;
+            font-size: 0.72rem;
+            min-height: 38px;
+        }
+        .nav-cta .btn-caramel {
+            background: var(--caramel);
+            border-color: var(--caramel);
+        }
+        .nav-cta .btn-caramel:hover {
+            background: #A9744E;
+            border-color: #A9744E;
+        }
 
-    /* ---------- HERO ---------- */
-    .hero {
-      height: 100vh;
-      min-height: 700px;
-      background: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 0 2rem;
-      overflow: hidden;
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(18, 55, 42, 0.6) 0%, rgba(0, 0, 0, 0.2) 100%);
-      z-index: 1;
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 680px;
-      color: #fff;
-      animation: heroFadeIn 1.8s ease forwards;
-    }
-    .hero-label {
-      font-family: 'Manrope', sans-serif;
-      font-weight: 600;
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: #C8A45D;
-      opacity: 0;
-      animation: fadeUp 1s ease 0.2s forwards;
-    }
-    .hero h1 {
-      font-size: 4.8rem;
-      font-weight: 700;
-      line-height: 1.05;
-      margin: 0.5rem 0 1rem;
-      opacity: 0;
-      animation: fadeUp 1s ease 0.4s forwards;
-    }
-    .hero h1 span {
-      display: block;
-    }
-    .hero p {
-      font-size: 1.15rem;
-      font-weight: 300;
-      opacity: 0.9;
-      max-width: 500px;
-      margin-bottom: 2rem;
-      opacity: 0;
-      animation: fadeUp 1s ease 0.6s forwards;
-    }
-    .hero-btns {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      opacity: 0;
-      animation: fadeUp 1s ease 0.8s forwards;
-    }
-    .hero-btns .btn {
-      padding: 0.9rem 2.5rem;
-    }
-    .hero-btns .btn-primary {
-      background: #C8A45D;
-      color: #fff;
-    }
-    .hero-btns .btn-primary:hover {
-      background: #b8944a;
-    }
-    .hero-btns .btn-secondary {
-      border-color: rgba(255, 255, 255, 0.6);
-      color: #fff;
-    }
-    .hero-btns .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: #fff;
-    }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 5px;
+            z-index: 1001;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 2px;
+            background: var(--charcoal);
+            border-radius: 2px;
+            transition: all var(--transition);
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
 
-    .scroll-indicator {
-      position: absolute;
-      bottom: 2.5rem;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 2;
-      color: rgba(255, 255, 255, 0.6);
-      font-size: 0.7rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.4rem;
-    }
-    .scroll-indicator .line {
-      width: 1px;
-      height: 40px;
-      background: rgba(255, 255, 255, 0.3);
-      position: relative;
-    }
-    .scroll-indicator .line::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 60%;
-      background: #C8A45D;
-      animation: scrollLine 2s ease-in-out infinite;
-    }
-    @keyframes scrollLine {
-      0% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(40px);
-        opacity: 0;
-      }
-    }
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    @keyframes heroFadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
+        .mobile-overlay {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 340px;
+            height: 100vh;
+            background: var(--ivory);
+            z-index: 999;
+            transition: right 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+            box-shadow: -10px 0 40px rgba(48, 40, 35, 0.08);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+            gap: 1.2rem;
+        }
+        .mobile-overlay.open {
+            right: 0;
+        }
+        .mobile-overlay a {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--beige-border);
+            transition: color var(--transition);
+        }
+        .mobile-overlay a:hover {
+            color: var(--caramel);
+        }
 
-    /* ---------- SECTIONS ---------- */
-    section {
-      padding: 100px 0;
-    }
-    .section-bg-cream {
-      background: #F8F4EC;
-    }
-    .section-bg-white {
-      background: #fff;
-    }
-    .section-bg-dark {
-      background: #12372A;
-      color: #fff;
-    }
+        /* Hero and other sections unchanged from previous */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            overflow: hidden;
+            background: var(--ivory);
+            padding: 0 2rem;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: url('./hero.png') center/cover no-repeat;
+            animation: heroZoom 22s ease-in-out infinite alternate;
+            z-index: 0;
+        }
+        @keyframes heroZoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.07); }
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+        .hero-overlay::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 180px;
+            z-index: 2;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 680px;
+            padding-top: 4rem;
+        }
+        .hero-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--caramel);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            opacity: 0;
+            animation: heroFadeUp 0.9s ease 0.2s forwards;
+        }
+        .hero-label::before {
+            content: '';
+            width: 50px;
+            height: 1.5px;
+            background: var(--caramel);
+            border-radius: 2px;
+        }
+        .hero h1 {
+            font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin: 1rem 0 1rem;
+            color: white;
+            opacity: 0;
+            animation: heroFadeUp 0.9s ease 0.4s forwards;
+        }
+        .hero h1 .line2 {
+            display: block;
+            color: var(--mocha);
+        }
+        .hero p {
+            font-size: 1.02rem;
+            font-weight: 300;
+            color: white;
+            max-width: 470px;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: heroFadeUp 0.9s ease 0.6s forwards;
+            line-height: 1.8;
+        }
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: heroFadeUp 0.9s ease 0.8s forwards;
+        }
+        .hero-btns .btn {
+            padding: 0.95rem 2.3rem;
+        }
+        @keyframes heroFadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hero-scroll {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--charcoal-light);
+            font-size: 0.68rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-weight: 400;
+            opacity: 0;
+            animation: heroFadeUp 1s ease 1.2s forwards;
+        }
+        .hero-scroll .scroll-line {
+            width: 1px;
+            height: 45px;
+            background: rgba(48, 40, 35, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-scroll .scroll-line::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: var(--caramel);
+            animation: scrollAnim 2s ease-in-out infinite;
+        }
+        @keyframes scrollAnim {
+            0% { transform: translateY(-30px); opacity: 1; }
+            100% { transform: translateY(45px); opacity: 0; }
+        }
 
-    /* ---------- HALAL SECTION ---------- */
-    .halal-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-    .halal-image img {
-      border-radius: 12px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
-      width: 100%;
-      height: 450px;
-      object-fit: cover;
-    }
-    .halal-text .gold-line {
-      width: 60px;
-      height: 2px;
-      background: #C8A45D;
-      margin: 1.5rem 0 1.2rem;
-    }
-    .halal-features {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 1.5rem;
-    }
-    .halal-features li {
-      font-weight: 500;
-      font-size: 0.95rem;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-    }
-    .halal-features li::before {
-      content: '';
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      background: #C8A45D;
-      border-radius: 50%;
-    }
+        section {
+            padding: 90px 0;
+        }
+        .bg-ivory { background: var(--ivory); }
+        .bg-cream { background: var(--cream); }
+        .bg-white { background: var(--white); }
+        .bg-mocha-soft {
+            background: linear-gradient(135deg, var(--mocha-dark), var(--mocha));
+            color: var(--white);
+        }
 
-    /* ---------- DISHES ---------- */
-    .dish-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-    .dish-card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
-      transition: all 0.5s ease;
-      cursor: default;
-    }
-    .dish-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
-    }
-    .dish-card img {
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-    }
-    .dish-card:hover img {
-      transform: scale(1.04);
-    }
-    .dish-info {
-      padding: 1.8rem 1.5rem 2rem;
-    }
-    .dish-info h3 {
-      font-size: 1.6rem;
-      font-weight: 600;
-      margin-bottom: 0.3rem;
-    }
-    .dish-info p {
-      color: #5a5a5a;
-      font-size: 0.9rem;
-      font-weight: 300;
-      margin: 0.5rem 0 1rem;
-    }
-    .dish-info .price {
-      font-family: 'Manrope', sans-serif;
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: #12372A;
-    }
-    .dish-info .view-link {
-      display: inline-block;
-      margin-top: 0.8rem;
-      font-weight: 500;
-      font-size: 0.8rem;
-      letter-spacing: 0.05em;
-      color: #C8A45D;
-      transition: all 0.3s;
-    }
-    .dish-info .view-link::after {
-      content: ' →';
-      transition: transform 0.3s;
-    }
-    .dish-card:hover .view-link::after {
-      transform: translateX(4px);
-    }
+        .halal-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4.5rem;
+            align-items: center;
+        }
+        .halal-image {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        .halal-image img {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+        .halal-image:hover img {
+            transform: scale(1.03);
+        }
+        .halal-image .badge {
+            position: absolute;
+            top: 1.2rem;
+            left: 1.2rem;
+            background: var(--caramel);
+            color: var(--white);
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            z-index: 2;
+            box-shadow: var(--shadow-sm);
+        }
+        .halal-text .gold-line {
+            width: 55px;
+            height: 2px;
+            background: var(--caramel);
+            border-radius: 2px;
+            margin: 1.4rem 0;
+        }
+        .halal-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .halal-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            font-weight: 400;
+            font-size: 0.88rem;
+            color: var(--charcoal-light);
+        }
+        .halal-features li i {
+            color: var(--caramel);
+            font-size: 0.8rem;
+        }
 
-    /* ---------- MENU ---------- */
-    .menu-categories {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem 2.5rem;
-      margin: 2rem 0 2.5rem;
-      justify-content: center;
-    }
-    .menu-categories button {
-      background: none;
-      border: none;
-      font-family: 'Manrope', sans-serif;
-      font-weight: 500;
-      font-size: 0.9rem;
-      letter-spacing: 0.02em;
-      color: rgba(255, 255, 255, 0.6);
-      cursor: pointer;
-      padding: 0.3rem 0;
-      transition: all 0.3s;
-      position: relative;
-    }
-    .menu-categories button.active {
-      color: #fff;
-    }
-    .menu-categories button.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: #C8A45D;
-    }
-    .menu-categories button:hover {
-      color: #fff;
-    }
-    .menu-items {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem 3rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .menu-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      padding: 0.8rem 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    }
-    .menu-item .item-name {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.3rem;
-      font-weight: 500;
-    }
-    .menu-item .item-desc {
-      font-size: 0.8rem;
-      opacity: 0.6;
-      font-weight: 300;
-      display: block;
-      margin-top: 0.1rem;
-    }
-    .menu-item .item-price {
-      font-weight: 600;
-      color: #C8A45D;
-      white-space: nowrap;
-      margin-left: 1rem;
-    }
-    .menu-cta {
-      text-align: center;
-      margin-top: 3rem;
-    }
+        .dish-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.8rem;
+            margin-top: 3rem;
+        }
+        .dish-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition);
+            cursor: pointer;
+            position: relative;
+            border: 1.5px solid var(--beige-border);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        .dish-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.7s ease, transform 0.7s ease, box-shadow var(--transition), border-color var(--transition);
+        }
+        .dish-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(185, 133, 90, 0.4);
+        }
+        .dish-card.active {
+            border-color: var(--caramel);
+            box-shadow: 0 12px 30px rgba(185, 133, 90, 0.15);
+            transform: translateY(-2px);
+        }
+        .dish-card .card-img {
+            position: relative;
+            overflow: hidden;
+            height: 220px;
+        }
+        .dish-card .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+        .dish-card:hover .card-img img {
+            transform: scale(1.04);
+        }
+        .dish-card .card-arrow {
+            position: absolute;
+            bottom: -18px;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+            background: var(--caramel);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 0.85rem;
+            transition: all var(--transition);
+            z-index: 2;
+            box-shadow: var(--shadow-sm);
+            opacity: 0;
+            pointer-events: none;
+        }
+        .dish-card:hover .card-arrow {
+            bottom: 1rem;
+            opacity: 1;
+            pointer-events: auto;
+            background: var(--mocha);
+        }
+        .dish-card .card-body {
+            padding: 1.4rem 1.4rem 1.6rem;
+        }
+        .dish-card .card-body h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-bottom: 0.3rem;
+        }
+        .dish-card .card-body p {
+            font-size: 0.8rem;
+            color: var(--charcoal-light);
+            font-weight: 300;
+            margin-bottom: 0.7rem;
+            line-height: 1.6;
+        }
+        .dish-card .card-body .price {
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--mocha);
+        }
 
-    /* ---------- DELIVERY ---------- */
-    .delivery-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-    .delivery-image img {
-      border-radius: 12px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-    }
-    .delivery-features {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 1.5rem;
-    }
-    .delivery-features li {
-      font-weight: 500;
-      font-size: 0.95rem;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-    }
-    .delivery-features li::before {
-      content: '';
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      background: #C8A45D;
-      border-radius: 50%;
-    }
+        .menu-wrapper {
+            background: var(--cream);
+            border-radius: var(--radius-xl);
+            padding: 3.5rem 2.8rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--beige-border);
+        }
+        .menu-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -15%;
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, rgba(185, 133, 90, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .menu-wrapper::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(201, 143, 114, 0.06) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .menu-search {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--white);
+            border: 1.5px solid var(--beige-border);
+            border-radius: 50px;
+            padding: 0.6rem 1.5rem;
+            max-width: 380px;
+            margin: 0 auto 2rem;
+            transition: all var(--transition);
+            position: relative;
+            z-index: 2;
+        }
+        .menu-search:focus-within {
+            border-color: var(--caramel);
+            box-shadow: 0 0 0 3px rgba(185, 133, 90, 0.1);
+        }
+        .menu-search input {
+            background: none;
+            border: none;
+            color: var(--charcoal);
+            flex: 1;
+            font-size: 0.85rem;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+        }
+        .menu-search input::placeholder {
+            color: #B0A294;
+        }
+        .menu-search i {
+            color: var(--caramel);
+            font-size: 0.9rem;
+        }
+        .menu-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.4rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        .menu-categories button {
+            font-size: 0.78rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: var(--charcoal-light);
+            padding: 0.5rem 1.2rem;
+            position: relative;
+            transition: all var(--transition);
+            text-transform: uppercase;
+            border-radius: 50px;
+            border: 1.5px solid transparent;
+        }
+        .menu-categories button:hover {
+            color: var(--charcoal);
+            background: rgba(185, 133, 90, 0.06);
+        }
+        .menu-categories button.active {
+            color: var(--caramel);
+            font-weight: 500;
+            background: rgba(185, 133, 90, 0.1);
+            border-color: rgba(185, 133, 90, 0.25);
+        }
+        .menu-items-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem 2.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 0.85rem 1rem;
+            border-bottom: 1px solid rgba(138, 96, 72, 0.12);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            border-radius: 8px;
+            gap: 1rem;
+            background: transparent;
+        }
+        .menu-item:hover {
+            background: rgba(255, 255, 255, 0.6);
+            padding-left: 1.4rem;
+        }
+        .menu-item .item-name {
+            font-size: 0.92rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            letter-spacing: 0.01em;
+        }
+        .menu-item .item-desc {
+            font-size: 0.74rem;
+            color: var(--charcoal-light);
+            font-weight: 300;
+            display: block;
+            margin-top: 0.15rem;
+        }
+        .menu-item .item-price {
+            font-weight: 600;
+            color: var(--mocha);
+            white-space: nowrap;
+            font-size: 0.88rem;
+        }
+        .no-results {
+            text-align: center;
+            color: var(--charcoal-light);
+            font-size: 0.9rem;
+            padding: 2rem 0;
+            grid-column: 1 / -1;
+        }
 
-    /* ---------- REVIEWS ---------- */
-    .review-slider {
-      max-width: 750px;
-      margin: 0 auto;
-      text-align: center;
-      position: relative;
-      padding: 0 2rem;
-    }
-    .review-slide {
-      display: none;
-      animation: fadeUp 0.6s ease forwards;
-    }
-    .review-slide.active {
-      display: block;
-    }
-    .review-slide blockquote {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2rem;
-      font-weight: 400;
-      font-style: italic;
-      color: #202020;
-      line-height: 1.4;
-      margin-bottom: 1rem;
-    }
-    .review-slide .review-author {
-      font-weight: 500;
-      color: #5a5a5a;
-      letter-spacing: 0.05em;
-    }
-    .review-controls {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      margin-top: 2.5rem;
-    }
-    .review-controls button {
-      background: none;
-      border: 1px solid #d0d0d0;
-      border-radius: 50%;
-      width: 44px;
-      height: 44px;
-      font-size: 1.2rem;
-      cursor: pointer;
-      transition: all 0.3s;
-      color: #202020;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .review-controls button:hover {
-      border-color: #12372A;
-      background: #12372A;
-      color: #fff;
-    }
-    .review-counter {
-      font-weight: 500;
-      font-size: 0.9rem;
-      color: #5a5a5a;
-      letter-spacing: 0.05em;
-    }
+        .delivery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4.5rem;
+            align-items: center;
+        }
+        .delivery-image {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+        .delivery-image img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+        .delivery-image:hover img {
+            transform: scale(1.03);
+        }
+        .delivery-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .delivery-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            font-weight: 400;
+            font-size: 0.88rem;
+            color: var(--charcoal-light);
+        }
+        .delivery-features li i {
+            color: var(--caramel);
+        }
 
-    /* ---------- FOOTER ---------- */
-    footer {
-      background: #12372A;
-      color: #fff;
-      padding: 80px 0 30px;
-    }
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 3rem;
-      padding-bottom: 3rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-      margin-bottom: 2rem;
-    }
-    .footer-brand h2 {
-      font-size: 2.8rem;
-      font-weight: 700;
-      line-height: 1;
-    }
-    .footer-brand small {
-      display: block;
-      font-family: 'Manrope', sans-serif;
-      font-weight: 300;
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      opacity: 0.6;
-      margin-bottom: 0.5rem;
-    }
-    .footer-brand p {
-      opacity: 0.6;
-      font-weight: 300;
-      max-width: 300px;
-    }
-    .footer-col h4 {
-      font-family: 'Manrope', sans-serif;
-      font-weight: 600;
-      font-size: 0.85rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-      color: #C8A45D;
-    }
-    .footer-col ul li {
-      margin-bottom: 0.8rem;
-    }
-    .footer-col ul li a {
-      opacity: 0.7;
-      font-weight: 300;
-      transition: opacity 0.3s;
-      font-size: 0.95rem;
-    }
-    .footer-col ul li a:hover {
-      opacity: 1;
-    }
-    .footer-socials {
-      display: flex;
-      gap: 1.2rem;
-      margin-top: 1rem;
-    }
-    .footer-socials a {
-      opacity: 0.6;
-      transition: opacity 0.3s;
-      font-size: 0.9rem;
-    }
-    .footer-socials a:hover {
-      opacity: 1;
-    }
-    .footer-bottom {
-      text-align: center;
-      font-size: 0.8rem;
-      opacity: 0.4;
-      font-weight: 300;
-      letter-spacing: 0.02em;
-    }
+        .review-slider {
+            max-width: 680px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            padding: 0 2rem;
+        }
+        .review-slide {
+            display: none;
+            animation: reviewFade 0.6s ease forwards;
+        }
+        .review-slide.active {
+            display: block;
+        }
+        @keyframes reviewFade {
+            from { opacity: 0; transform: translateY(18px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .review-stars {
+            color: var(--caramel);
+            font-size: 0.95rem;
+            letter-spacing: 0.3em;
+            margin-bottom: 0.8rem;
+        }
+        .review-slide blockquote {
+            font-size: 1.3rem;
+            font-weight: 400;
+            font-style: italic;
+            color: var(--charcoal);
+            line-height: 1.7;
+            margin-bottom: 0.4rem;
+        }
+        .review-slide .review-author {
+            font-weight: 500;
+            color: var(--charcoal-light);
+            font-size: 0.78rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        .review-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 1.8rem;
+        }
+        .review-controls button {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1.5px solid var(--beige-border);
+            background: var(--white);
+            color: var(--charcoal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            transition: all var(--transition);
+            cursor: pointer;
+        }
+        .review-controls button:hover {
+            border-color: var(--caramel);
+            background: var(--caramel);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        .review-counter {
+            font-weight: 500;
+            font-size: 0.78rem;
+            color: var(--charcoal-light);
+            letter-spacing: 0.08em;
+        }
 
-    /* ---------- SCROLL ANIMATIONS ---------- */
-    .reveal {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .reveal-left {
-      opacity: 0;
-      transform: translateX(-40px);
-      transition: all 0.8s ease;
-    }
-    .reveal-left.visible {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    .reveal-right {
-      opacity: 0;
-      transform: translateX(40px);
-      transition: all 0.8s ease;
-    }
-    .reveal-right.visible {
-      opacity: 1;
-      transform: translateX(0);
-    }
+        .final-cta {
+            background: linear-gradient(135deg, var(--mocha-dark), var(--mocha));
+            position: relative;
+            overflow: hidden;
+            padding: 70px 0;
+        }
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            opacity: 0.08;
+            z-index: 1;
+        }
+        .final-cta .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        .final-cta .section-title {
+            color: var(--white);
+        }
+        .final-cta .section-sub {
+            color: rgba(255, 255, 255, 0.75);
+            margin: 0 auto 1.8rem;
+        }
+        .final-cta .cta-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-    /* ---------- RESPONSIVE (MOBILE FIRST) ---------- */
-    @media (max-width: 1024px) {
-      .section-title {
-        font-size: 2.8rem;
-      }
-      .dish-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+        .footer {
+            background: var(--mocha-dark);
+            color: var(--white);
+            padding: 70px 0 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--caramel), var(--terracotta), var(--caramel));
+        }
+        .footer::after {
+            content: '';
+            position: absolute;
+            top: -40%;
+            right: -15%;
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, rgba(185, 133, 90, 0.07) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .footer-top {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1.1fr 1.4fr;
+            gap: 2.2rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            position: relative;
+            z-index: 2;
+        }
+        .footer-brand h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: 0.04em;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+        .footer-brand h3 i {
+            color: var(--caramel);
+            font-size: 1.1rem;
+        }
+        .footer-brand .brand-sub {
+            font-size: 0.58rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.4);
+            display: block;
+            margin-bottom: 0.8rem;
+        }
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.55);
+            font-weight: 300;
+            font-size: 0.82rem;
+            line-height: 1.7;
+            max-width: 250px;
+        }
+        .footer-col h4 {
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--caramel);
+            margin-bottom: 1.1rem;
+        }
+        .footer-col ul li {
+            margin-bottom: 0.55rem;
+        }
+        .footer-col ul li a {
+            color: rgba(255, 255, 255, 0.65);
+            font-weight: 300;
+            font-size: 0.8rem;
+            transition: all var(--transition-fast);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .footer-col ul li a i {
+            font-size: 0.5rem;
+            color: var(--caramel);
+            transition: transform var(--transition-fast);
+        }
+        .footer-col ul li a:hover {
+            color: var(--caramel);
+        }
+        .footer-col ul li a:hover i {
+            transform: translateX(3px);
+        }
+        .footer-socials {
+            display: flex;
+            gap: 0.55rem;
+            margin-top: 1rem;
+        }
+        .footer-socials a {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.65);
+            transition: all var(--transition);
+            font-size: 0.78rem;
+        }
+        .footer-socials a:hover {
+            background: var(--caramel);
+            color: var(--white);
+            border-color: var(--caramel);
+            transform: translateY(-2px);
+        }
+        .footer-newsletter p {
+            color: rgba(255, 255, 255, 0.55);
+            font-size: 0.8rem;
+            font-weight: 300;
+            margin-bottom: 0.8rem;
+        }
+        .footer-newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .footer-newsletter-form input {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 50px;
+            padding: 0.55rem 1.1rem;
+            color: var(--white);
+            font-size: 0.8rem;
+            transition: all var(--transition);
+            min-width: 0;
+        }
+        .footer-newsletter-form input::placeholder {
+            color: rgba(255, 255, 255, 0.35);
+        }
+        .footer-newsletter-form input:focus {
+            border-color: var(--caramel);
+            background: rgba(255, 255, 255, 0.12);
+        }
+        .footer-newsletter-form button {
+            background: var(--caramel);
+            color: var(--white);
+            border-radius: 50px;
+            padding: 0.55rem 1.2rem;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            white-space: nowrap;
+        }
+        .footer-newsletter-form button:hover {
+            background: #A9744E;
+            transform: translateY(-2px);
+        }
+        .footer-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.4rem 0;
+            font-size: 0.72rem;
+            color: rgba(255, 255, 255, 0.4);
+            font-weight: 300;
+            position: relative;
+            z-index: 2;
+            gap: 0.8rem;
+        }
+        .footer-bottom-links {
+            display: flex;
+            gap: 1.4rem;
+            flex-wrap: wrap;
+        }
+        .footer-bottom-links a {
+            color: rgba(255, 255, 255, 0.4);
+            transition: color var(--transition-fast);
+        }
+        .footer-bottom-links a:hover {
+            color: var(--caramel);
+        }
 
-    @media (max-width: 768px) {
-      /* Navbar */
-      .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 75%;
-        max-width: 320px;
-        height: 100vh;
-        background: #F8F4EC;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        transition: right 0.4s ease;
-        box-shadow: -10px 0 40px rgba(0, 0, 0, 0.05);
-      }
-      .nav-links.open {
-        right: 0;
-      }
-      .nav-links a {
-        color: #202020 !important;
-        font-size: 1.2rem;
-      }
-      .nav-links a::after {
-        background: #C8A45D;
-      }
-      .nav-cta {
-        display: none;
-      }
-      .hamburger {
-        display: flex;
-      }
-      .navbar {
-        padding: 0 1.5rem;
-      }
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(48, 40, 35, 0.5);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+            padding: 1.5rem;
+            backdrop-filter: blur(6px);
+        }
+        .modal-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            max-width: 720px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: var(--shadow-xl);
+            transform: translateY(20px) scale(0.97);
+            transition: transform 0.4s ease;
+            position: relative;
+        }
+        .modal-overlay.open .modal {
+            transform: translateY(0) scale(1);
+        }
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid var(--beige-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--charcoal);
+            font-size: 0.95rem;
+            z-index: 10;
+            transition: all var(--transition);
+            cursor: pointer;
+        }
+        .modal-close:hover {
+            background: var(--mocha);
+            color: var(--white);
+            border-color: var(--mocha);
+        }
+        .modal-img {
+            height: 240px;
+            overflow: hidden;
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+        }
+        .modal-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .modal-body {
+            padding: 1.8rem 1.8rem 2.2rem;
+        }
+        .modal-body h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 0.25rem;
+        }
+        .modal-body .modal-price {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--mocha);
+            margin-bottom: 0.8rem;
+            display: block;
+        }
+        .modal-body p {
+            font-size: 0.88rem;
+            color: var(--charcoal-light);
+            font-weight: 300;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        .modal-body .modal-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.3rem;
+            padding: 0.9rem 1.1rem;
+            background: var(--cream);
+            border-radius: 10px;
+        }
+        .modal-body .modal-info span {
+            font-size: 0.75rem;
+            color: var(--charcoal-light);
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+        .modal-body .modal-info i {
+            color: var(--caramel);
+        }
+        .modal-body .qty-selector {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 1.3rem;
+        }
+        .modal-body .qty-selector button {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: 1.5px solid var(--beige-border);
+            background: var(--white);
+            color: var(--charcoal);
+            font-size: 0.78rem;
+            transition: all var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-body .qty-selector button:hover {
+            border-color: var(--mocha);
+            background: var(--mocha);
+            color: var(--white);
+        }
+        .modal-body .qty-selector span {
+            font-weight: 500;
+            font-size: 1.05rem;
+            min-width: 28px;
+            text-align: center;
+        }
+        .modal-body .modal-actions {
+            display: flex;
+            gap: 0.7rem;
+            flex-wrap: wrap;
+        }
 
-      /* Hero */
-      .hero {
-        min-height: 100vh;
-        padding: 0 1.5rem;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
-      .hero h1 {
-        font-size: 2.8rem;
-      }
-      .hero p {
-        font-size: 1rem;
-        max-width: 100%;
-      }
-      .hero-btns {
-        justify-content: center;
-      }
-      .hero-btns .btn {
-        padding: 0.8rem 1.8rem;
-        font-size: 0.85rem;
-      }
-      .scroll-indicator {
-        display: none;
-      }
+        .cart-drawer {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 380px;
+            max-width: 90vw;
+            height: 100vh;
+            background: var(--white);
+            z-index: 1500;
+            box-shadow: -15px 0 50px rgba(48, 40, 35, 0.1);
+            transition: right 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+            display: flex;
+            flex-direction: column;
+        }
+        .cart-drawer.open {
+            right: 0;
+        }
+        .cart-header {
+            padding: 1.4rem;
+            border-bottom: 1px solid var(--beige-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--cream);
+        }
+        .cart-header h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--charcoal);
+        }
+        .cart-header button {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: 1px solid var(--beige-border);
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition);
+            color: var(--charcoal);
+        }
+        .cart-header button:hover {
+            background: var(--mocha);
+            color: var(--white);
+            border-color: var(--mocha);
+        }
+        .cart-items {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0.8rem 1.4rem;
+        }
+        .cart-empty {
+            text-align: center;
+            color: var(--charcoal-light);
+            font-size: 0.82rem;
+            padding: 2rem;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--beige-border);
+        }
+        .cart-item img {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .cart-item .cart-item-info {
+            flex: 1;
+        }
+        .cart-item .cart-item-info h4 {
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--charcoal);
+        }
+        .cart-item .cart-item-info span {
+            font-size: 0.72rem;
+            color: var(--charcoal-light);
+        }
+        .cart-item .cart-item-price {
+            font-weight: 500;
+            font-size: 0.88rem;
+            color: var(--mocha);
+        }
+        .cart-item .cart-qty {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        .cart-item .cart-qty button {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 1px solid var(--beige-border);
+            background: var(--white);
+            font-size: 0.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition);
+            color: var(--charcoal);
+        }
+        .cart-item .cart-qty button:hover {
+            background: var(--mocha);
+            color: var(--white);
+            border-color: var(--mocha);
+        }
+        .cart-footer {
+            padding: 1.3rem;
+            border-top: 1px solid var(--beige-border);
+            background: var(--cream);
+        }
+        .cart-total {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+        .cart-footer .btn {
+            width: 100%;
+        }
 
-      /* Sections */
-      section {
-        padding: 70px 0;
-      }
-      .section-title {
-        font-size: 2.4rem;
-      }
-      .section-sub {
-        font-size: 1rem;
-      }
+        .reservation-modal .modal {
+            max-width: 500px;
+        }
+        .reservation-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+        }
+        .reservation-form input,
+        .reservation-form select,
+        .reservation-form textarea {
+            padding: 0.75rem 1.1rem;
+            border: 1.5px solid var(--beige-border);
+            border-radius: 8px;
+            font-size: 0.82rem;
+            color: var(--charcoal);
+            transition: all var(--transition);
+            background: var(--white);
+            width: 100%;
+        }
+        .reservation-form input:focus,
+        .reservation-form select:focus,
+        .reservation-form textarea:focus {
+            border-color: var(--caramel);
+            box-shadow: 0 0 0 3px rgba(185, 133, 90, 0.1);
+        }
+        .reservation-form label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            letter-spacing: 0.04em;
+            display: block;
+            margin-bottom: 0.2rem;
+        }
 
-      /* Halal Grid */
-      .halal-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-      .halal-image img {
-        height: 280px;
-      }
-      .halal-features {
-        gap: 1rem;
-      }
+        .reveal {
+            opacity: 0;
+            transform: translateY(35px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-45px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(45px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.94);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal-scale.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
 
-      /* Dishes */
-      .dish-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-      .dish-card img {
-        height: 220px;
-      }
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        textarea:focus-visible {
+            outline: 2px solid var(--caramel);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
 
-      /* Menu */
-      .menu-items {
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
-      }
-      .menu-categories {
-        gap: 0.8rem 1.5rem;
-      }
-      .menu-categories button {
-        font-size: 0.8rem;
-      }
+        /* Responsive */
+        @media (max-width: 1100px) {
+            .footer-top {
+                grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
+                gap: 1.8rem;
+            }
+            .footer-newsletter {
+                grid-column: 1 / -1;
+            }
+        }
+        @media (max-width: 1024px) {
+            .dish-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .halal-grid,
+            .delivery-grid {
+                gap: 3rem;
+            }
+            .menu-wrapper {
+                padding: 2.8rem 2rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-links,
+            .nav-cta {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .hero {
+                padding: 0 1.5rem;
+                justify-content: center;
+                text-align: center;
+            }
+            .hero-content {
+                text-align: center;
+                padding-top: 3rem;
+            }
+            .hero-label {
+                justify-content: center;
+            }
+            .hero-btns {
+                justify-content: center;
+            }
+            .hero-scroll {
+                display: none;
+            }
+            section {
+                padding: 65px 0;
+            }
+            .halal-grid,
+            .delivery-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .halal-image img {
+                height: 260px;
+            }
+            .dish-grid {
+                grid-template-columns: 1fr;
+                gap: 1.3rem;
+            }
+            .menu-items-grid {
+                grid-template-columns: 1fr;
+                gap: 0.4rem;
+            }
+            .menu-wrapper {
+                padding: 1.8rem 1.2rem;
+                border-radius: var(--radius-lg);
+            }
+            .review-slide blockquote {
+                font-size: 1.1rem;
+            }
+            .footer-top {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.8rem;
+                padding-bottom: 2rem;
+            }
+            .footer-brand {
+                grid-column: 1 / -1;
+            }
+            .footer-newsletter {
+                grid-column: 1 / -1;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+            }
+            .footer-bottom-links {
+                justify-content: center;
+            }
+            .container {
+                padding: 0 1.5rem;
+            }
+            .modal-body {
+                padding: 1.4rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .footer-top {
+                grid-template-columns: 1fr;
+                gap: 1.4rem;
+            }
+            .hero h1 {
+                font-size: 2.1rem;
+            }
+            .dish-card .card-img {
+                height: 180px;
+            }
+            .review-slide blockquote {
+                font-size: 1rem;
+            }
+            .footer-newsletter-form {
+                flex-direction: column;
+            }
+            .footer-newsletter-form button {
+                justify-content: center;
+                width: 100%;
+            }
+        }
 
-      /* Delivery */
-      .delivery-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-      .delivery-image img {
-        height: 250px;
-      }
-
-      /* Reviews */
-      .review-slide blockquote {
-        font-size: 1.5rem;
-      }
-
-      /* Footer */
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-      }
-      .footer-brand {
-        grid-column: 1 / -1;
-      }
-
-      .container {
-        padding: 0 1.5rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-      .section-title {
-        font-size: 2rem;
-      }
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-      .review-controls {
-        gap: 1rem;
-      }
-    }
-  </style>
+        /* Restore brown theme for menu and footer */
+        #menu {
+            background: #2B1B16;
+        }
+        #menu .section-title {
+            color: #FFFFFF;
+        }
+        #menu .section-sub {
+            color: rgba(255,255,255,0.75);
+        }
+        #menu .menu-wrapper {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: none;
+        }
+        #menu .menu-search {
+            background: rgba(255,255,255,0.08);
+            border-color: rgba(255,255,255,0.15);
+        }
+        #menu .menu-search input {
+            color: #FFFFFF;
+        }
+        #menu .menu-search input::placeholder {
+            color: rgba(255,255,255,0.4);
+        }
+        #menu .menu-search i {
+            color: #B9855A;
+        }
+        #menu .menu-categories button {
+            color: rgba(255,255,255,0.7);
+        }
+        #menu .menu-categories button:hover {
+            color: #FFFFFF;
+            background: rgba(255,255,255,0.05);
+        }
+        #menu .menu-categories button.active {
+            color: #B9855A;
+            background: rgba(185,133,90,0.15);
+            border-color: rgba(185,133,90,0.3);
+        }
+        #menu .menu-item {
+            border-bottom-color: rgba(255,255,255,0.1);
+        }
+        #menu .menu-item:hover {
+            background: rgba(255,255,255,0.05);
+        }
+        #menu .menu-item .item-name {
+            color: #FFFFFF;
+        }
+        #menu .menu-item .item-desc {
+            color: rgba(255,255,255,0.6);
+        }
+        #menu .menu-item .item-price {
+            color: #B9855A;
+        }
+        #menu .no-results {
+            color: rgba(255,255,255,0.6);
+        }
+        .footer {
+            background: #2B1B16;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- ====== NAVBAR ====== -->
-  <header class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
-    <div class="nav-logo">
-      DELICIOUS
-      <small>Restaurant</small>
+    <header class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <a href="#" class="nav-logo" aria-label="Delicious Restaurant home">
+            <span class="logo-icon"><i class="fas fa-utensils"></i></span>
+            <span class="logo-text">DELICIOUS<span>Restaurant</span></span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#halal">About</a></li>
+            <li><a href="#dishes">Dishes</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#delivery">Delivery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="#" class="btn btn-outline-mocha btn-sm" id="navCartBtn" aria-label="Open cart"><i class="fas fa-shopping-bag"></i> Cart <span id="cartCount" style="font-weight:600;">0</span></a>
+            <a href="#" class="btn btn-caramel btn-sm" id="navBookBtn"><i class="fas fa-calendar-check"></i> Book a Table</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <div class="mobile-overlay" id="mobileOverlay">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#halal" class="mobile-link">About</a>
+        <a href="#dishes" class="mobile-link">Dishes</a>
+        <a href="#menu" class="mobile-link">Menu</a>
+        <a href="#delivery" class="mobile-link">Delivery</a>
+        <a href="#reviews" class="mobile-link">Reviews</a>
+        <a href="#" class="btn btn-caramel btn-sm" id="mobileBookBtn" style="margin-top:0.8rem;"><i class="fas fa-calendar-check"></i> Book a Table</a>
+        <a href="#" class="btn btn-outline-mocha btn-sm" id="mobileCartBtn"><i class="fas fa-shopping-bag"></i> View Cart</a>
     </div>
 
-    <ul class="nav-links" id="navLinks" role="menubar">
-      <li role="none"><a href="#" role="menuitem">Home</a></li>
-      <li role="none"><a href="#" role="menuitem">Menu</a></li>
-      <li role="none"><a href="#" role="menuitem">About</a></li>
-      <li role="none"><a href="#" role="menuitem">Gallery</a></li>
-      <li role="none"><a href="#" role="menuitem">Contact</a></li>
-    </ul>
+    <main>
+        <section class="hero" id="home" aria-label="Hero banner">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-overlay" aria-hidden="true"></div>
+            <div class="hero-content">
+                <div class="hero-label">Delicious Restaurant</div>
+                <h1>Authentic Flavours.<span class="line2">Deliciously Halal.</span></h1>
+                <p>Experience beautifully prepared halal cuisine in London, made with quality ingredients and authentic flavours.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn btn-caramel btn-lg"><i class="fas fa-book-open"></i> Explore Menu</a>
+                    <a href="#delivery" class="btn btn-primary btn-lg"><i class="fas fa-shopping-bag"></i> Order Online</a>
+                </div>
+            </div>
+            <div class="hero-scroll" aria-hidden="true">
+                Scroll
+                <div class="scroll-line"></div>
+            </div>
+        </section>
 
-    <div class="nav-cta">
-      <a href="#" class="btn btn-secondary">Order Online</a>
-      <a href="#" class="btn btn-primary">Book a Table</a>
+        <section class="bg-ivory" id="halal" aria-labelledby="halal-heading">
+            <div class="container halal-grid">
+                <div class="halal-image reveal-left">
+                    <span class="badge"><i class="fas fa-check-circle"></i> 100% Halal</span>
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fresh halal ingredients and beautifully prepared food" loading="lazy" />
+                </div>
+                <div class="halal-text reveal-right">
+                    <span class="section-label">100% Halal</span>
+                    <h2 class="section-title" id="halal-heading">Made With Quality. Served With Confidence.</h2>
+                    <p class="section-sub">Every dish at Delicious Restaurant is prepared with halal ingredients, carefully selected for quality, freshness and flavour.</p>
+                    <div class="gold-line"></div>
+                    <ul class="halal-features">
+                        <li><i class="fas fa-check-circle"></i> 100% Halal Ingredients</li>
+                        <li><i class="fas fa-check-circle"></i> Freshly Prepared</li>
+                        <li><i class="fas fa-check-circle"></i> Authentic Flavours</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white" id="dishes" aria-labelledby="dishes-heading">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-label" style="justify-content:center;">Signature Dishes</span>
+                    <h2 class="section-title" id="dishes-heading">Favourites Made Delicious</h2>
+                    <p class="section-sub mx-auto">A selection of favourites, prepared fresh and served with the Delicious touch.</p>
+                    <p class="section-sub mx-auto" style="font-size:0.9rem;color:var(--charcoal-light);margin-top:0.5rem;">Select any dish for full details.</p>
+                </div>
+                <div class="dish-grid" id="signatureDishes"></div>
+            </div>
+        </section>
+
+        <section class="bg-cream" id="menu" aria-labelledby="menu-heading">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-label" style="justify-content:center;">The Menu</span>
+                    <h2 class="section-title" id="menu-heading">Something For Every Craving</h2>
+                    <p class="section-sub mx-auto">Explore our selection of freshly prepared halal dishes, from traditional favourites to modern dining classics.</p>
+                </div>
+                <div class="menu-wrapper reveal">
+                    <div class="menu-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="menuSearchInput" placeholder="Search our menu..." aria-label="Search menu" />
+                    </div>
+                    <div class="menu-categories" id="menuCategories" role="tablist" aria-label="Menu categories"></div>
+                    <div class="menu-items-grid" id="menuItemsGrid"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white" id="delivery" aria-labelledby="delivery-heading">
+            <div class="container delivery-grid">
+                <div class="delivery-text reveal-left">
+                    <span class="section-label">Delicious, Delivered</span>
+                    <h2 class="section-title" id="delivery-heading">Your Favourite Food, Delivered To Your Door.</h2>
+                    <p class="section-sub">Enjoy your favourite halal dishes from the comfort of your home. Order online and let Delicious bring the taste to your doorstep.</p>
+                    <ul class="delivery-features">
+                        <li><i class="fas fa-check-circle"></i> Freshly Prepared</li>
+                        <li><i class="fas fa-box-open"></i> Carefully Packed</li>
+                        <li><i class="fas fa-truck"></i> Delivered To Your Door</li>
+                    </ul>
+                    <div style="margin-top:1.8rem;">
+                        <a href="#menu" class="btn btn-caramel btn-lg"><i class="fas fa-shopping-bag"></i> Order Online</a>
+                    </div>
+                </div>
+                <div class="delivery-image reveal-right">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Delicious food delivery packaging" loading="lazy" />
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-ivory" id="reviews" aria-labelledby="reviews-heading">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-label" style="justify-content:center;">What Our Guests Say</span>
+                    <h2 class="section-title" id="reviews-heading">A Taste Worth Talking About</h2>
+                </div>
+                <div class="review-slider reveal" id="reviewSlider">
+                    <div class="review-slide active">
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <blockquote>"Beautiful food, excellent service and a wonderful dining experience."</blockquote>
+                        <div class="review-author">— Guest Review</div>
+                    </div>
+                    <div class="review-slide">
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <blockquote>"The best halal restaurant in London. The lamb chops are unforgettable."</blockquote>
+                        <div class="review-author">— Guest Review</div>
+                    </div>
+                    <div class="review-slide">
+                        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <blockquote>"Incredible flavours and a lovely atmosphere. Highly recommended."</blockquote>
+                        <div class="review-author">— Guest Review</div>
+                    </div>
+                    <div class="review-controls">
+                        <button id="prevReview" aria-label="Previous review"><i class="fas fa-chevron-left"></i></button>
+                        <span class="review-counter" id="reviewCounter">01 / 03</span>
+                        <button id="nextReview" aria-label="Next review"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta" id="finalCta" aria-label="Call to action">
+            <div class="container">
+                <div class="reveal">
+                    <h2 class="section-title" style="color:var(--white);">Ready for Something Delicious?</h2>
+                    <p class="section-sub" style="color:rgba(255,255,255,0.75);">Discover our halal menu, order online or reserve your table at Delicious Restaurant.</p>
+                    <div class="cta-btns">
+                        <a href="#menu" class="btn btn-caramel btn-lg"><i class="fas fa-book-open"></i> Explore Menu</a>
+                        <a href="#" class="btn btn-outline-light btn-lg" id="finalCtaBookBtn"><i class="fas fa-calendar-check"></i> Book a Table</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-utensils"></i> DELICIOUS</h3>
+                    <span class="brand-sub">Restaurant</span>
+                    <p>Authentic Flavours. Deliciously Halal. Experience premium halal dining in the heart of London.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#halal"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#menu"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                        <li><a href="#dishes"><i class="fas fa-chevron-right"></i> Dishes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dining</h4>
+                    <ul>
+                        <li><a href="#delivery"><i class="fas fa-chevron-right"></i> Order Online</a></li>
+                        <li><a href="#" id="footerBookBtn"><i class="fas fa-chevron-right"></i> Book a Table</a></li>
+                        <li><a href="#reviews"><i class="fas fa-chevron-right"></i> Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Visit</h4>
+                    <ul>
+                        <li><a href="https://maps.google.com/?q=Delicious+Restaurant+London" target="_blank" rel="noopener"><i class="fas fa-chevron-right"></i> 123 Food Street, London</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Mon – Sun: 12:00 – 22:00</a></li>
+                        <li><a href="tel:+442079460958"><i class="fas fa-chevron-right"></i> +44 20 7946 0958</a></li>
+                        <li><a href="mailto:hello@delicious.co.uk"><i class="fas fa-chevron-right"></i> hello@delicious.co.uk</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 style="font-size:0.68rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--caramel);margin-bottom:0.8rem;">Stay in the know</h4>
+                    <p>Subscribe for exclusive offers, menu updates and event invitations.</p>
+                    <form class="footer-newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email address" aria-label="Email address" required />
+                        <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Delicious Restaurant. All Rights Reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="foodModalOverlay" role="dialog" aria-modal="true" aria-label="Food details">
+        <div class="modal" id="foodModal">
+            <button class="modal-close" id="foodModalClose" aria-label="Close details"><i class="fas fa-times"></i></button>
+            <div class="modal-img" id="foodModalImg">
+                <img src="" alt="Dish image" />
+            </div>
+            <div class="modal-body" id="foodModalBody"></div>
+        </div>
     </div>
 
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </header>
-
-  <!-- ====== MAIN ====== -->
-  <main>
-
-    <!-- ====== HERO ====== -->
-    <section class="hero" id="home" aria-label="Hero banner">
-      <div class="hero-content">
-        <div class="hero-label">Delicious Restaurant</div>
-        <h1>
-          Authentic Flavours.
-          <span>Deliciously Halal.</span>
-        </h1>
-        <p>
-          Experience beautifully prepared halal cuisine in London, made with quality ingredients and authentic flavours.
-        </p>
-        <div class="hero-btns">
-          <a href="#" class="btn btn-primary">Explore Menu</a>
-          <a href="#" class="btn btn-secondary">Order Online</a>
-        </div>
-      </div>
-      <div class="scroll-indicator" aria-hidden="true">
-        Scroll to discover
-        <div class="line"></div>
-      </div>
-    </section>
-
-    <!-- ====== 100% HALAL ====== -->
-    <section class="section-bg-cream" aria-labelledby="halal-heading">
-      <div class="container halal-grid">
-        <div class="halal-image reveal-left">
-          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fresh halal ingredients and beautifully prepared food" loading="lazy" />
-        </div>
-        <div class="halal-text reveal-right">
-          <span class="section-label">100% Halal</span>
-          <h2 id="halal-heading" class="section-title">Made With Quality. Served With Confidence.</h2>
-          <p class="section-sub">
-            Every dish at Delicious Restaurant is prepared with halal ingredients, carefully selected for quality, freshness and flavour.
-          </p>
-          <div class="gold-line"></div>
-          <ul class="halal-features">
-            <li>100% Halal Ingredients</li>
-            <li>Freshly Prepared</li>
-            <li>Authentic Flavours</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====== SIGNATURE DISHES ====== -->
-    <section class="section-bg-white" aria-labelledby="dishes-heading">
-      <div class="container">
-        <div class="text-center reveal">
-          <span class="section-label">Signature Dishes</span>
-          <h2 id="dishes-heading" class="section-title">Favourites Made Delicious</h2>
-          <p class="section-sub mx-auto">
-            A selection of favourites, prepared fresh and served with the Delicious touch.
-          </p>
-        </div>
-        <div class="dish-grid">
-          <article class="dish-card reveal">
-            <img src="./lamb.png.png" alt="Grilled Lamb Chops" loading="lazy" />
-            <div class="dish-info">
-              <h3>Grilled Lamb Chops</h3>
-              <p>Tender lamb seasoned with signature spices and grilled to perfection.</p>
-              <span class="price">£18.95</span>
-              <span class="view-link">View Dish</span>
+    <div class="modal-overlay reservation-modal" id="reservationModalOverlay" role="dialog" aria-modal="true" aria-label="Book a table">
+        <div class="modal">
+            <button class="modal-close" id="reservationModalClose" aria-label="Close reservation"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <h3 style="font-size:1.3rem;margin-bottom:0.4rem;">Book a Table</h3>
+                <p style="font-size:0.82rem;color:var(--charcoal-light);margin-bottom:1rem;">Reserve your table at Delicious Restaurant.</p>
+                <form class="reservation-form" id="reservationForm">
+                    <div>
+                        <label for="resName">Full Name</label>
+                        <input type="text" id="resName" placeholder="Your name" required />
+                    </div>
+                    <div>
+                        <label for="resEmail">Email Address</label>
+                        <input type="email" id="resEmail" placeholder="your@email.com" required />
+                    </div>
+                    <div>
+                        <label for="resPhone">Phone Number</label>
+                        <input type="tel" id="resPhone" placeholder="+44" required />
+                    </div>
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;">
+                        <div>
+                            <label for="resDate">Date</label>
+                            <input type="date" id="resDate" required />
+                        </div>
+                        <div>
+                            <label for="resTime">Time</label>
+                            <select id="resTime" required>
+                                <option value="">Select time</option>
+                                <option>12:00</option><option>12:30</option><option>13:00</option>
+                                <option>13:30</option><option>14:00</option><option>14:30</option>
+                                <option>18:00</option><option>18:30</option><option>19:00</option>
+                                <option>19:30</option><option>20:00</option><option>20:30</option>
+                                <option>21:00</option><option>21:30</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="resGuests">Number of Guests</label>
+                        <select id="resGuests" required>
+                            <option value="">Select guests</option>
+                            <option>1</option><option>2</option><option>3</option><option>4</option>
+                            <option>5</option><option>6</option><option>7</option><option>8+</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="resNotes">Special Requests</label>
+                        <textarea id="resNotes" rows="2" placeholder="Any dietary requirements or special requests..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-caramel btn-lg" style="width:100%;margin-top:0.4rem;"><i class="fas fa-check-circle"></i> Confirm Reservation</button>
+                </form>
             </div>
-          </article>
-          <article class="dish-card reveal">
-            <img src="./chickentikka.png" alt="Chicken Tikka" loading="lazy" />
-            <div class="dish-info">
-              <h3>Chicken Tikka</h3>
-              <p>Marinated chicken grilled with aromatic spices.</p>
-              <span class="price">£12.95</span>
-              <span class="view-link">View Dish</span>
-            </div>
-          </article>
-          <article class="dish-card reveal">
-            <img src="./biryani.png" alt="Lamb Biryani" loading="lazy" />
-            <div class="dish-info">
-              <h3>Lamb Biryani</h3>
-              <p>Fragrant basmati rice cooked with tender lamb and aromatic spices.</p>
-              <span class="price">£15.95</span>
-              <span class="view-link">View Dish</span>
-            </div>
-          </article>
         </div>
-      </div>
-    </section>
-
-    <!-- ====== MENU EXPERIENCE ====== -->
-    <section class="section-bg-dark" aria-labelledby="menu-heading">
-      <div class="container">
-        <div class="text-center reveal">
-          <span class="section-label">The Menu</span>
-          <h2 id="menu-heading" class="section-title">Something For Every Craving</h2>
-          <p class="section-sub mx-auto" style="color: rgba(255,255,255,0.7);">
-            Explore our selection of freshly prepared halal dishes, from traditional favourites to modern dining classics.
-          </p>
-        </div>
-
-        <div class="menu-categories" role="tablist" aria-label="Menu categories">
-          <button class="active" data-category="starters" role="tab">Starters</button>
-          <button data-category="grills" role="tab">Grills</button>
-          <button data-category="main" role="tab">Main Course</button>
-          <button data-category="rice" role="tab">Rice &amp; Biryani</button>
-        </div>
-
-        <div class="menu-items" id="menuItems">
-          <!-- Items will be injected by JS -->
-        </div>
-
-        <div class="menu-cta">
-          <a href="#" class="btn btn-gold">View Full Menu</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====== DELICIOUS, DELIVERED ====== -->
-    <section class="section-bg-cream" aria-labelledby="delivery-heading">
-      <div class="container delivery-grid">
-        <div class="delivery-text reveal-left">
-          <span class="section-label">Delicious, Delivered</span>
-          <h2 id="delivery-heading" class="section-title">Your Favourite Food, Delivered To Your Door.</h2>
-          <p class="section-sub">
-            Enjoy your favourite halal dishes from the comfort of your home. Order online and let Delicious bring the taste to your doorstep.
-          </p>
-          <ul class="delivery-features">
-            <li>Freshly Prepared</li>
-            <li>Carefully Packed</li>
-            <li>Delivered To Your Door</li>
-          </ul>
-          <div style="margin-top: 2rem;">
-            <a href="#" class="btn btn-primary">Order Online</a>
-          </div>
-        </div>
-        <div class="delivery-image reveal-right">
-          <img src="./beef.png" alt="Delicious food delivery packaging" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <!-- ====== REVIEWS ====== -->
-    <section class="section-bg-white" aria-labelledby="reviews-heading">
-      <div class="container">
-        <div class="text-center reveal">
-          <span class="section-label">What Our Guests Say</span>
-          <h2 id="reviews-heading" class="section-title">A Taste Worth Talking About</h2>
-        </div>
-        <div class="review-slider reveal">
-          <div class="review-slide active">
-            <blockquote>“Beautiful food, excellent service and a wonderful dining experience.”</blockquote>
-            <div class="review-author">— Guest Review</div>
-          </div>
-          <div class="review-slide">
-            <blockquote>“The best halal restaurant in London. The lamb chops are unforgettable.”</blockquote>
-            <div class="review-author">— Guest Review</div>
-          </div>
-          <div class="review-slide">
-            <blockquote>“Incredible flavours and a lovely atmosphere. Highly recommended.”</blockquote>
-            <div class="review-author">— Guest Review</div>
-          </div>
-          <div class="review-controls">
-            <button id="prevReview" aria-label="Previous review">‹</button>
-            <span class="review-counter" id="reviewCounter">01 / 03</span>
-            <button id="nextReview" aria-label="Next review">›</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ====== FOOTER ====== -->
-  <footer role="contentinfo">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h2>DELICIOUS</h2>
-          <small>Restaurant</small>
-          <p>Authentic Flavours. Deliciously Halal.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Gallery</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Dining</h4>
-          <ul>
-            <li><a href="#">Order Online</a></li>
-            <li><a href="#">Book a Table</a></li>
-            <li><a href="#">Reviews</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Visit</h4>
-          <ul>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Opening Hours</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <div class="footer-socials">
-            <a href="#" aria-label="Instagram">IG</a>
-            <a href="#" aria-label="Facebook">FB</a>
-            <a href="#" aria-label="TikTok">TT</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        © 2026 Delicious Restaurant. All Rights Reserved.
-      </div>
     </div>
-  </footer>
 
-  <!-- ====== JAVASCRIPT ====== -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-
-      // ---------- NAVBAR SCROLL ----------
-      const navbar = document.getElementById('navbar');
-      window.addEventListener('scroll', function() {
-        if (window.scrollY > 60) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-      });
-
-      // ---------- HAMBURGER MENU ----------
-      const hamburger = document.getElementById('hamburger');
-      const navLinks = document.getElementById('navLinks');
-      hamburger.addEventListener('click', function() {
-        this.classList.toggle('active');
-        navLinks.classList.toggle('open');
-        const expanded = this.classList.contains('active');
-        this.setAttribute('aria-expanded', expanded);
-      });
-      // Close menu on link click (mobile)
-      navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', function() {
-          hamburger.classList.remove('active');
-          navLinks.classList.remove('open');
-          hamburger.setAttribute('aria-expanded', 'false');
-        });
-      });
-
-      // ---------- SCROLL REVEAL (Intersection Observer) ----------
-      const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -30px 0px'
-      });
-      revealElements.forEach(el => observer.observe(el));
-
-      // ---------- MENU DATA ----------
-      const menuData = {
-        starters: [
-          { name: 'Soup of the Day', desc: 'Freshly prepared with seasonal ingredients.', price: '£6.95' },
-          { name: 'Garlic Bread', desc: 'Toasted bread with garlic butter and herbs.', price: '£4.95' },
-          { name: 'Chicken Wings', desc: 'Spicy grilled chicken wings with dip.', price: '£7.50' },
-        ],
-        grills: [
-          { name: 'Grilled Lamb Chops', desc: 'Tender lamb with signature spices.', price: '£18.95' },
-          { name: 'Chicken Tikka', desc: 'Marinated chicken grilled to perfection.', price: '£12.95' },
-          { name: 'Seekh Kebab', desc: 'Minced lamb skewers with aromatic spices.', price: '£11.95' },
-        ],
-        main: [
-          { name: 'Chicken Karahi', desc: 'Classic curry with fresh tomatoes and ginger.', price: '£14.95' },
-          { name: 'Lamb Handi', desc: 'Slow-cooked lamb in a rich, creamy sauce.', price: '£16.95' },
-          { name: 'Vegetable Curry', desc: 'Mixed vegetables in a light spiced sauce.', price: '£10.95' },
-        ],
-        rice: [
-          { name: 'Lamb Biryani', desc: 'Fragrant basmati with tender lamb.', price: '£15.95' },
-          { name: 'Chicken Biryani', desc: 'Aromatic rice with spiced chicken.', price: '£13.95' },
-          { name: 'Plain Basmati Rice', desc: 'Steamed basmati rice.', price: '£4.50' },
-        ]
-      };
-
-      const menuItemsContainer = document.getElementById('menuItems');
-      const categoryButtons = document.querySelectorAll('.menu-categories button');
-
-      function renderMenu(category) {
-        const items = menuData[category] || menuData.starters;
-        menuItemsContainer.innerHTML = items.map(item => `
-          <div class="menu-item">
-            <div>
-              <span class="item-name">${item.name}</span>
-              <span class="item-desc">${item.desc}</span>
+    <div class="cart-drawer" id="cartDrawer" role="dialog" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-bag" style="color:var(--caramel);margin-right:0.4rem;"></i> Your Order</h3>
+            <button id="cartClose" aria-label="Close cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">£0.00</span>
             </div>
-            <span class="item-price">${item.price}</span>
-          </div>
-        `).join('');
-      }
+            <button class="btn btn-caramel" id="checkoutBtn"><i class="fas fa-lock"></i> Checkout</button>
+        </div>
+    </div>
 
-      // Set default
-      renderMenu('starters');
+    <script>
+        (function() {
+            'use strict';
 
-      categoryButtons.forEach(btn => {
-        btn.addEventListener('click', function() {
-          categoryButtons.forEach(b => b.classList.remove('active'));
-          this.classList.add('active');
-          const category = this.dataset.category;
-          renderMenu(category);
-        });
-      });
+            // ============ CENTRALIZED MENU DATA ============
+            const menuData = {
+                signature: [
+                    { id: 'sig1', name: 'Grilled Lamb Chops', category: 'grills', desc: 'Tender lamb seasoned with signature spices and grilled to perfection.', fullDescription: 'Tender lamb chops marinated with carefully selected spices and grilled to perfection. Served with a side of mint sauce and grilled vegetables.', price: 18.95, img: 'https://images.unsplash.com/photo-1603048297172-c92544798d5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', ingredients: 'Lamb chops, garlic, rosemary, thyme, olive oil, sea salt, black pepper, paprika', halal: true, available: true },
+                    { id: 'sig2', name: 'Chicken Tikka', category: 'grills', desc: 'Marinated chicken grilled with aromatic spices.', fullDescription: 'Succulent chicken pieces marinated in yogurt and traditional spices, grilled until charred and served with fresh lemon.', price: 12.95, img: 'https://images.unsplash.com/photo-1588166524941-3bf61b9c6c6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', ingredients: 'Chicken breast, yogurt, ginger, garlic, turmeric, cumin, coriander, chili powder', halal: true, available: true },
+                    { id: 'sig3', name: 'Lamb Biryani', category: 'rice', desc: 'Fragrant basmati rice cooked with tender lamb and aromatic spices.', fullDescription: 'Fragrant basmati rice layered with tender lamb and a blend of aromatic spices, slow-cooked and garnished with crispy onions and fresh mint.', price: 15.95, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', ingredients: 'Basmati rice, lamb, saffron, cardamom, cloves, cinnamon, mint, fried onions', halal: true, available: true },
+                ],
+                starters: [
+                    { id: 'st1', name: 'Soup of the Day', category: 'starters', desc: 'Freshly prepared with seasonal ingredients.', fullDescription: 'A comforting bowl of soup made from fresh, seasonal vegetables and herbs, blended to a silky texture.', price: 6.95, img: 'https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Seasonal vegetables, herbs, cream, seasoning', halal: true, available: true },
+                    { id: 'st2', name: 'Garlic Bread', category: 'starters', desc: 'Toasted bread with garlic butter and herbs.', fullDescription: 'Crusty baguette slices brushed with garlic butter, topped with fresh parsley and oregano, toasted until golden.', price: 4.95, img: 'https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Baguette, garlic butter, parsley, oregano', halal: true, available: true },
+                    { id: 'st3', name: 'Chicken Wings', category: 'starters', desc: 'Spicy grilled chicken wings with dip.', fullDescription: 'Chicken wings marinated in a spicy chili and honey glaze, grilled until crispy and served with a cooling dip.', price: 7.50, img: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Chicken wings, chili sauce, garlic, honey, lime', halal: true, available: true },
+                    { id: 'st4', name: 'Hummus & Pita', category: 'starters', desc: 'Creamy hummus served with warm pita bread.', fullDescription: 'Smooth chickpea hummus blended with tahini, olive oil and lemon, served with warm grilled pita bread.', price: 5.95, img: 'https://images.unsplash.com/photo-1548340748-6d2f4a5f2f46?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Chickpeas, tahini, olive oil, lemon, garlic, pita bread', halal: true, available: true },
+                ],
+                grills: [
+                    { id: 'gr1', name: 'Grilled Lamb Chops', category: 'grills', desc: 'Tender lamb with signature spices.', fullDescription: 'Tender lamb chops marinated with signature spices, grilled to your liking and served with mint sauce.', price: 18.95, img: 'https://images.unsplash.com/photo-1603048297172-c92544798d5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Lamb chops, rosemary, thyme, garlic, olive oil, spices', halal: true, available: true },
+                    { id: 'gr2', name: 'Chicken Tikka', category: 'grills', desc: 'Marinated chicken grilled to perfection.', fullDescription: 'Chicken pieces marinated in spices and yogurt, grilled until charred and juicy.', price: 12.95, img: 'https://images.unsplash.com/photo-1588166524941-3bf61b9c6c6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Chicken, yogurt, ginger, garlic, spices', halal: true, available: true },
+                    { id: 'gr3', name: 'Seekh Kebab', category: 'grills', desc: 'Minced lamb skewers with aromatic spices.', fullDescription: 'Minced lamb mixed with fresh herbs and spices, skewered and grilled over open flame.', price: 11.95, img: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Minced lamb, onion, coriander, cumin, chili', halal: true, available: true },
+                    { id: 'gr4', name: 'Mixed Grill Platter', category: 'grills', desc: 'A selection of our finest grilled meats.', fullDescription: 'A generous platter featuring lamb chops, chicken tikka, and seekh kebab, served with grilled vegetables.', price: 22.95, img: 'https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Lamb chops, chicken tikka, seekh kebab, grilled vegetables', halal: true, available: true },
+                ],
+                main: [
+                    { id: 'mn1', name: 'Chicken Karahi', category: 'main', desc: 'Classic curry with fresh tomatoes and ginger.', fullDescription: 'A traditional Pakistani dish cooked with fresh tomatoes, ginger, garlic and green chilies, finished with coriander.', price: 14.95, img: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Chicken, tomatoes, ginger, garlic, green chilies, coriander', halal: true, available: true },
+                    { id: 'mn2', name: 'Lamb Handi', category: 'main', desc: 'Slow-cooked lamb in a rich, creamy sauce.', fullDescription: 'Lamb slow-cooked in a rich, creamy sauce with cashews, cardamom and saffron, served in a traditional handi pot.', price: 16.95, img: 'https://images.unsplash.com/photo-1545247181-516773cae754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Lamb, cream, cashews, cardamom, saffron, butter', halal: true, available: true },
+                    { id: 'mn3', name: 'Vegetable Curry', category: 'main', desc: 'Mixed vegetables in a light spiced sauce.', fullDescription: 'A medley of seasonal vegetables simmered in a light coconut milk and tomato sauce with aromatic spices.', price: 10.95, img: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Mixed vegetables, tomato, coconut milk, curry leaves, turmeric', halal: true, available: true },
+                    { id: 'mn4', name: 'Butter Chicken', category: 'main', desc: 'Tender chicken in a velvety tomato sauce.', fullDescription: 'Tender chicken simmered in a velvety tomato and butter sauce, enriched with cream and fenugreek.', price: 15.95, img: 'https://images.unsplash.com/photo-1588166524941-3bf61b9c6c6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Chicken, butter, cream, tomato, fenugreek, garam masala', halal: true, available: true },
+                ],
+                rice: [
+                    { id: 'rc1', name: 'Lamb Biryani', category: 'rice', desc: 'Fragrant basmati with tender lamb.', fullDescription: 'Fragrant basmati rice cooked with tender lamb and aromatic spices, garnished with crispy onions and mint.', price: 15.95, img: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Basmati rice, lamb, saffron, cardamom, mint, fried onions', halal: true, available: true },
+                    { id: 'rc2', name: 'Chicken Biryani', category: 'rice', desc: 'Aromatic rice with spiced chicken.', fullDescription: 'Aromatic basmati rice layered with spiced chicken, flavored with saffron and fresh herbs.', price: 13.95, img: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Basmati rice, chicken, biryani spices, mint, yogurt', halal: true, available: true },
+                    { id: 'rc3', name: 'Vegetable Biryani', category: 'rice', desc: 'Fragrant rice with seasonal vegetables.', fullDescription: 'Basmati rice cooked with mixed vegetables and biryani spices, finished with saffron and mint.', price: 11.95, img: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Basmati rice, mixed vegetables, saffron, spices, herbs', halal: true, available: true },
+                    { id: 'rc4', name: 'Plain Basmati Rice', category: 'rice', desc: 'Steamed basmati rice.', fullDescription: 'Fluffy steamed basmati rice, perfect as an accompaniment.', price: 4.50, img: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Basmati rice, water, salt', halal: true, available: true },
+                ],
+                burgers: [
+                    { id: 'bg1', name: 'Classic Beef Burger', category: 'burgers', desc: 'Halal beef patty with fresh toppings.', fullDescription: 'Juicy halal beef patty topped with lettuce, tomato, cheese and house sauce in a brioche bun.', price: 11.95, img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Halal beef patty, brioche bun, lettuce, tomato, cheese, house sauce', halal: true, available: true },
+                    { id: 'bg2', name: 'Crispy Chicken Burger', category: 'burgers', desc: 'Crispy halal chicken fillet with slaw.', fullDescription: 'Crispy halal chicken fillet topped with coleslaw, pickles and mayo in a brioche bun.', price: 9.95, img: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Halal chicken fillet, brioche bun, coleslaw, pickles, mayo', halal: true, available: true },
+                ],
+                desserts: [
+                    { id: 'ds1', name: 'Chocolate Lava Cake', category: 'desserts', desc: 'Warm chocolate cake with molten centre.', fullDescription: 'Warm chocolate cake with a molten chocolate centre, served with vanilla ice cream.', price: 6.95, img: 'https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Dark chocolate, butter, eggs, sugar, flour', halal: true, available: true },
+                    { id: 'ds2', name: 'Kheer', category: 'desserts', desc: 'Traditional rice pudding with cardamom.', fullDescription: 'Traditional rice pudding flavored with cardamom and garnished with pistachios and rose water.', price: 5.50, img: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Rice, milk, cardamom, pistachios, rose water, sugar', halal: true, available: true },
+                ],
+                sweets: [
+                    { id: 'sw1', name: 'Gulab Jamun', category: 'sweets', desc: 'Soft milk dumplings in rose syrup.', fullDescription: 'Soft milk dumplings soaked in rose syrup and garnished with cardamom.', price: 4.95, img: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Milk solids, flour, sugar, rose water, cardamom', halal: true, available: true },
+                    { id: 'sw2', name: 'Baklava', category: 'sweets', desc: 'Layered pastry with nuts and honey.', fullDescription: 'Layers of crisp phyllo pastry filled with chopped nuts and sweetened with honey.', price: 5.95, img: 'https://images.unsplash.com/photo-1598110750624-207050c4f28c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Phyllo dough, pistachios, walnuts, butter, honey', halal: true, available: true },
+                ],
+                drinks: [
+                    { id: 'dr1', name: 'Mango Lassi', category: 'drinks', desc: 'Refreshing yogurt drink with mango.', fullDescription: 'A refreshing yogurt-based drink blended with mango pulp and a hint of cardamom.', price: 4.50, img: 'https://images.unsplash.com/photo-1553787499-6f9133860278?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Yogurt, mango pulp, milk, sugar, cardamom', halal: true, available: true },
+                    { id: 'dr2', name: 'Fresh Mint Tea', category: 'drinks', desc: 'Traditional tea with fresh mint leaves.', fullDescription: 'Green tea infused with fresh mint leaves and a touch of honey.', price: 3.50, img: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', ingredients: 'Green tea, mint leaves, honey', halal: true, available: true },
+                ],
+            };
 
-      // ---------- REVIEWS SLIDER ----------
-      const slides = document.querySelectorAll('.review-slide');
-      const prevBtn = document.getElementById('prevReview');
-      const nextBtn = document.getElementById('nextReview');
-      const counter = document.getElementById('reviewCounter');
-      let currentSlide = 0;
-      const totalSlides = slides.length;
+            const allCategories = ['starters', 'grills', 'main', 'rice', 'burgers', 'desserts', 'sweets', 'drinks'];
+            const categoryLabels = {
+                starters: 'Starters',
+                grills: 'Grills',
+                main: 'Main Course',
+                rice: 'Rice & Biryani',
+                burgers: 'Burgers',
+                desserts: 'Desserts',
+                sweets: 'Sweets',
+                drinks: 'Drinks',
+            };
 
-      function updateSlider(index) {
-        slides.forEach((slide, i) => {
-          slide.classList.toggle('active', i === index);
-        });
-        counter.textContent = String(index + 1).padStart(2, '0') + ' / ' + String(totalSlides).padStart(2, '0');
-      }
+            let cart = {};
+            let currentMenuCategory = 'starters';
+            let currentReview = 0;
+            let currentFoodId = null;
+            let activeCardId = null;
 
-      prevBtn.addEventListener('click', function() {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        updateSlider(currentSlide);
-      });
-      nextBtn.addEventListener('click', function() {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        updateSlider(currentSlide);
-      });
+            const navbar = document.getElementById('navbar');
+            const hamburger = document.getElementById('hamburger');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            const signatureDishesContainer = document.getElementById('signatureDishes');
+            const menuCategoriesContainer = document.getElementById('menuCategories');
+            const menuItemsGrid = document.getElementById('menuItemsGrid');
+            const menuSearchInput = document.getElementById('menuSearchInput');
+            const reviewSlides = document.querySelectorAll('.review-slide');
+            const prevReviewBtn = document.getElementById('prevReview');
+            const nextReviewBtn = document.getElementById('nextReview');
+            const reviewCounter = document.getElementById('reviewCounter');
+            const foodModalOverlay = document.getElementById('foodModalOverlay');
+            const foodModalImg = document.querySelector('#foodModalImg img');
+            const foodModalBody = document.getElementById('foodModalBody');
+            const foodModalClose = document.getElementById('foodModalClose');
+            const cartDrawer = document.getElementById('cartDrawer');
+            const cartItemsContainer = document.getElementById('cartItems');
+            const cartTotalEl = document.getElementById('cartTotal');
+            const cartCountEl = document.getElementById('cartCount');
+            const cartCloseBtn = document.getElementById('cartClose');
+            const checkoutBtn = document.getElementById('checkoutBtn');
+            const reservationModalOverlay = document.getElementById('reservationModalOverlay');
+            const reservationModalClose = document.getElementById('reservationModalClose');
+            const reservationForm = document.getElementById('reservationForm');
+            const navCartBtn = document.getElementById('navCartBtn');
+            const navBookBtn = document.getElementById('navBookBtn');
+            const mobileBookBtn = document.getElementById('mobileBookBtn');
+            const mobileCartBtn = document.getElementById('mobileCartBtn');
+            const footerBookBtn = document.getElementById('footerBookBtn');
+            const finalCtaBookBtn = document.getElementById('finalCtaBookBtn');
+            const newsletterForm = document.getElementById('newsletterForm');
 
-      // Initialize counter
-      updateSlider(0);
+            function formatPrice(amount) {
+                return '£' + amount.toFixed(2);
+            }
 
-    });
-  </script>
+            function getDishById(id) {
+                for (const cat of Object.values(menuData)) {
+                    for (const dish of cat) {
+                        if (dish.id === id) return dish;
+                    }
+                }
+                return null;
+            }
 
+            function getAllDishes() {
+                const all = [];
+                for (const cat of Object.values(menuData)) {
+                    all.push(...cat);
+                }
+                const seen = {};
+                return all.filter(d => {
+                    if (seen[d.id]) return false;
+                    seen[d.id] = true;
+                    return true;
+                });
+            }
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 40) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            hamburger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mobileOverlay.classList.toggle('open');
+                this.setAttribute('aria-expanded', this.classList.contains('active'));
+            });
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    mobileOverlay.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+            revealElements.forEach(el => observer.observe(el));
+
+            function renderSignatureDishes() {
+                signatureDishesContainer.innerHTML = menuData.signature.map(dish => `
+                    <article class="dish-card" data-dish-id="${dish.id}" tabindex="0" role="button" aria-label="View ${dish.name} details">
+                        <div class="card-img">
+                            <img src="${dish.img}" alt="${dish.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x220?text=Delicious+Food'; this.onerror=null;" />
+                            <span class="card-arrow"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="card-body">
+                            <h3>${dish.name}</h3>
+                            <p>${dish.desc}</p>
+                            <span class="price">${formatPrice(dish.price)}</span>
+                        </div>
+                    </article>
+                `).join('');
+
+                document.querySelectorAll('.dish-card').forEach((card, index) => {
+                    card.addEventListener('click', function() {
+                        const id = this.dataset.dishId;
+                        openFoodModal(id);
+                        setActiveCard(this);
+                    });
+                    card.addEventListener('keydown', function(e) {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            openFoodModal(this.dataset.dishId);
+                            setActiveCard(this);
+                        }
+                    });
+                    // Stagger reveal
+                    setTimeout(() => {
+                        card.classList.add('visible');
+                    }, index * 100);
+                });
+            }
+
+            function setActiveCard(card) {
+                document.querySelectorAll('.dish-card').forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+                activeCardId = card.dataset.dishId;
+            }
+
+            function renderMenuCategories() {
+                menuCategoriesContainer.innerHTML = allCategories.map(cat => `
+                    <button class="${cat === currentMenuCategory ? 'active' : ''}" data-category="${cat}" role="tab" aria-selected="${cat === currentMenuCategory}">
+                        ${categoryLabels[cat]}
+                    </button>
+                `).join('');
+                document.querySelectorAll('.menu-categories button').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        document.querySelectorAll('.menu-categories button').forEach(b => {
+                            b.classList.remove('active');
+                            b.setAttribute('aria-selected', 'false');
+                        });
+                        this.classList.add('active');
+                        this.setAttribute('aria-selected', 'true');
+                        currentMenuCategory = this.dataset.category;
+                        renderMenuItems();
+                    });
+                });
+            }
+
+            function renderMenuItems() {
+                const searchTerm = menuSearchInput.value.toLowerCase().trim();
+                let items = menuData[currentMenuCategory] || [];
+
+                if (searchTerm) {
+                    items = items.filter(dish => dish.name.toLowerCase().includes(searchTerm));
+                }
+
+                if (items.length === 0) {
+                    menuItemsGrid.innerHTML = '<div class="no-results">No dishes match your search. Try a different keyword.</div>';
+                    return;
+                }
+
+                menuItemsGrid.innerHTML = items.map(dish => `
+                    <div class="menu-item" data-dish-id="${dish.id}" tabindex="0" role="button" aria-label="View ${dish.name} details">
+                        <div>
+                            <span class="item-name">${dish.name}</span>
+                            <span class="item-desc">${dish.desc}</span>
+                        </div>
+                        <span class="item-price">${formatPrice(dish.price)}</span>
+                    </div>
+                `).join('');
+
+                document.querySelectorAll('.menu-item').forEach(item => {
+                    item.addEventListener('click', function() {
+                        openFoodModal(this.dataset.dishId);
+                    });
+                    item.addEventListener('keydown', function(e) {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            openFoodModal(this.dataset.dishId);
+                        }
+                    });
+                });
+            }
+
+            menuSearchInput.addEventListener('input', renderMenuItems);
+
+            function openFoodModal(dishId) {
+                const dish = getDishById(dishId);
+                if (!dish) return;
+                currentFoodId = dishId;
+                foodModalImg.src = dish.img;
+                foodModalImg.alt = dish.name;
+                foodModalBody.innerHTML = `
+                    <h3>${dish.name}</h3>
+                    <span class="modal-price">${formatPrice(dish.price)}</span>
+                    <p>${dish.fullDescription || dish.desc}</p>
+                    <div class="modal-info">
+                        <span><i class="fas fa-check-circle"></i> 100% Halal</span>
+                        <span><i class="fas fa-fire"></i> Freshly Prepared</span>
+                        <span><i class="fas fa-clock"></i> 15-20 min</span>
+                    </div>
+                    <div style="margin-bottom:0.7rem;">
+                        <strong style="font-size:0.75rem;color:var(--charcoal);">Ingredients:</strong>
+                        <p style="font-size:0.76rem;color:var(--charcoal-light);margin-top:0.2rem;">${dish.ingredients}</p>
+                    </div>
+                    <div class="qty-selector">
+                        <button id="qtyMinus" aria-label="Decrease quantity"><i class="fas fa-minus"></i></button>
+                        <span id="qtyDisplay">1</span>
+                        <button id="qtyPlus" aria-label="Increase quantity"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="btn btn-caramel" id="modalAddToCart"><i class="fas fa-shopping-bag"></i> Add to Order</button>
+                        <button class="btn btn-outline-mocha" id="modalOrderNow"><i class="fas fa-bolt"></i> Order Now</button>
+                    </div>
+                `;
+                foodModalOverlay.classList.add('open');
+
+                let qty = 1;
+                const qtyDisplay = document.getElementById('qtyDisplay');
+                document.getElementById('qtyMinus').addEventListener('click', () => {
+                    if (qty > 1) qty--;
+                    qtyDisplay.textContent = qty;
+                });
+                document.getElementById('qtyPlus').addEventListener('click', () => {
+                    qty++;
+                    qtyDisplay.textContent = qty;
+                });
+                document.getElementById('modalAddToCart').addEventListener('click', () => {
+                    addToCart(dishId, qty);
+                    foodModalOverlay.classList.remove('open');
+                });
+                document.getElementById('modalOrderNow').addEventListener('click', () => {
+                    addToCart(dishId, qty);
+                    foodModalOverlay.classList.remove('open');
+                    openCartDrawer();
+                });
+            }
+
+            foodModalClose.addEventListener('click', () => foodModalOverlay.classList.remove('open'));
+            foodModalOverlay.addEventListener('click', (e) => {
+                if (e.target === foodModalOverlay) foodModalOverlay.classList.remove('open');
+            });
+
+            function addToCart(dishId, qty = 1) {
+                const dish = getDishById(dishId);
+                if (!dish) return;
+                if (cart[dishId]) {
+                    cart[dishId].qty += qty;
+                } else {
+                    cart[dishId] = { ...dish, qty: qty };
+                }
+                updateCartUI();
+                openCartDrawer();
+            }
+
+            function updateCartQty(dishId, delta) {
+                if (!cart[dishId]) return;
+                cart[dishId].qty += delta;
+                if (cart[dishId].qty <= 0) {
+                    delete cart[dishId];
+                }
+                updateCartUI();
+            }
+
+            function updateCartUI() {
+                const entries = Object.entries(cart);
+                const totalItems = entries.reduce((sum, [_, item]) => sum + item.qty, 0);
+                const totalPrice = entries.reduce((sum, [_, item]) => sum + item.price * item.qty, 0);
+
+                cartCountEl.textContent = totalItems;
+                cartTotalEl.textContent = formatPrice(totalPrice);
+
+                if (entries.length === 0) {
+                    cartItemsContainer.innerHTML = '<div class="cart-empty">Your cart is empty. Browse our menu to add items.</div>';
+                } else {
+                    cartItemsContainer.innerHTML = entries.map(([id, item]) => `
+                        <div class="cart-item">
+                            <img src="${item.img}" alt="${item.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/48x48?text=Food'; this.onerror=null;" />
+                            <div class="cart-item-info">
+                                <h4>${item.name}</h4>
+                                <span>${formatPrice(item.price)} each</span>
+                                <div class="cart-qty" style="margin-top:0.25rem;">
+                                    <button data-action="minus" data-id="${id}" aria-label="Decrease quantity"><i class="fas fa-minus"></i></button>
+                                    <span style="font-weight:500;font-size:0.75rem;">${item.qty}</span>
+                                    <button data-action="plus" data-id="${id}" aria-label="Increase quantity"><i class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <span class="cart-item-price">${formatPrice(item.price * item.qty)}</span>
+                        </div>
+                    `).join('');
+
+                    document.querySelectorAll('.cart-qty button').forEach(btn => {
+                        btn.addEventListener('click', function(e) {
+                            e.stopPropagation();
+                            const action = this.dataset.action;
+                            const id = this.dataset.id;
+                            if (action === 'plus') updateCartQty(id, 1);
+                            if (action === 'minus') updateCartQty(id, -1);
+                        });
+                    });
+                }
+            }
+
+            function openCartDrawer() {
+                cartDrawer.classList.add('open');
+            }
+
+            cartCloseBtn.addEventListener('click', () => cartDrawer.classList.remove('open'));
+            navCartBtn.addEventListener('click', (e) => { e.preventDefault(); openCartDrawer(); });
+            mobileCartBtn.addEventListener('click', (e) => { e.preventDefault(); openCartDrawer(); hamburger.classList.remove('active'); mobileOverlay.classList.remove('open'); });
+
+            checkoutBtn.addEventListener('click', () => {
+                if (Object.keys(cart).length === 0) return;
+                alert('Thank you! Your order has been placed. Total: ' + cartTotalEl.textContent);
+                cart = {};
+                updateCartUI();
+                cartDrawer.classList.remove('open');
+            });
+
+            function updateReviews() {
+                reviewSlides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === currentReview);
+                });
+                reviewCounter.textContent = String(currentReview + 1).padStart(2, '0') + ' / ' + String(reviewSlides.length).padStart(2, '0');
+            }
+
+            prevReviewBtn.addEventListener('click', () => {
+                currentReview = (currentReview - 1 + reviewSlides.length) % reviewSlides.length;
+                updateReviews();
+            });
+            nextReviewBtn.addEventListener('click', () => {
+                currentReview = (currentReview + 1) % reviewSlides.length;
+                updateReviews();
+            });
+
+            let reviewInterval;
+            function startAutoSlide() {
+                reviewInterval = setInterval(() => {
+                    currentReview = (currentReview + 1) % reviewSlides.length;
+                    updateReviews();
+                }, 5000);
+            }
+            function stopAutoSlide() {
+                clearInterval(reviewInterval);
+            }
+            const reviewSliderEl = document.getElementById('reviewSlider');
+            reviewSliderEl.addEventListener('mouseenter', stopAutoSlide);
+            reviewSliderEl.addEventListener('mouseleave', startAutoSlide);
+            prevReviewBtn.addEventListener('click', stopAutoSlide);
+            nextReviewBtn.addEventListener('click', stopAutoSlide);
+
+            function openReservationModal() {
+                reservationModalOverlay.classList.add('open');
+            }
+
+            reservationModalClose.addEventListener('click', () => reservationModalOverlay.classList.remove('open'));
+            reservationModalOverlay.addEventListener('click', (e) => {
+                if (e.target === reservationModalOverlay) reservationModalOverlay.classList.remove('open');
+            });
+            navBookBtn.addEventListener('click', (e) => { e.preventDefault(); openReservationModal(); });
+            mobileBookBtn.addEventListener('click', (e) => { e.preventDefault(); openReservationModal(); hamburger.classList.remove('active'); mobileOverlay.classList.remove('open'); });
+            footerBookBtn.addEventListener('click', (e) => { e.preventDefault(); openReservationModal(); });
+            finalCtaBookBtn.addEventListener('click', (e) => { e.preventDefault(); openReservationModal(); });
+
+            reservationForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('resName').value;
+                const date = document.getElementById('resDate').value;
+                const time = document.getElementById('resTime').value;
+                if (name && date && time) {
+                    alert(`Thank you, ${name}! Your table is reserved for ${date} at ${time}. We look forward to serving you.`);
+                    reservationModalOverlay.classList.remove('open');
+                    this.reset();
+                }
+            });
+
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = this.querySelector('input[type="email"]');
+                if (input && input.value) {
+                    input.value = '';
+                    input.placeholder = '✓ Subscribed successfully!';
+                    input.style.borderColor = '#B9855A';
+                    setTimeout(() => {
+                        input.placeholder = 'Your email address';
+                        input.style.borderColor = '';
+                    }, 3000);
+                }
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    foodModalOverlay.classList.remove('open');
+                    reservationModalOverlay.classList.remove('open');
+                    cartDrawer.classList.remove('open');
+                    if (mobileOverlay.classList.contains('open')) {
+                        hamburger.classList.remove('active');
+                        mobileOverlay.classList.remove('open');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            });
+
+            renderSignatureDishes();
+            renderMenuCategories();
+            renderMenuItems();
+            updateCartUI();
+            updateReviews();
+            startAutoSlide();
+            window.scrollTo(0, 0);
+        })();
+    </script>
 </body>
 </html>
