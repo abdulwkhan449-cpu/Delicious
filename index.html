@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicious Restaurant — Premium Halal Dining in London</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Experience beautifully prepared halal cuisine in London at Delicious Restaurant. Authentic flavours, premium ingredients, and online ordering available." />
+  <meta name="keywords" content="halal restaurant London, premium halal food, Delicious Restaurant, halal dining, order halal online" />
+  <link rel="canonical" href="https://deliciousrestaurant.co.uk/" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Delicious Restaurant — Premium Halal Dining in London" />
+  <meta property="og:description" content="Authentic Flavours. Deliciously Halal. Experience premium halal cuisine in London." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://deliciousrestaurant.co.uk/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Delicious Restaurant",
+      "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      "description": "Premium halal restaurant based in London, offering authentic flavours and freshly prepared dishes.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "GB"
+      },
+      "servesCuisine": "Halal, British, Asian",
+      "priceRange": "££",
+      "telephone": "+44-20-7946-0958",
+      "openingHours": "Mo-Su 12:00-22:00",
+      "url": "https://deliciousrestaurant.co.uk/"
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ---------- RESET ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Manrope', sans-serif;
+      color: #202020;
+      background: #F8F4EC;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    ul {
+      list-style: none;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .section-label {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #C8A45D;
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+    }
+    .section-sub {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: #4a4a4a;
+      max-width: 600px;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ---------- BUTTONS ---------- */
+    .btn {
+      display: inline-block;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.03em;
+      padding: 0.9rem 2.2rem;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      min-height: 52px;
+    }
+    .btn-primary {
+      background: #12372A;
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: #1a4f3b;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(18, 55, 42, 0.2);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: #12372A;
+      border: 1.5px solid #12372A;
+    }
+    .btn-secondary:hover {
+      background: #12372A;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .btn-gold {
+      background: #C8A45D;
+      color: #fff;
+    }
+    .btn-gold:hover {
+      background: #b8944a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(200, 164, 93, 0.3);
+    }
+
+    /* ---------- NAVBAR ---------- */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 0 2rem;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.4s ease;
+      background: transparent;
+    }
+    .navbar.scrolled {
+      background: rgba(248, 244, 236, 0.95);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04);
+      height: 76px;
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 0.05em;
+      color: #fff;
+      transition: color 0.3s;
+      line-height: 1.1;
+    }
+    .nav-logo small {
+      display: block;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 300;
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+    .navbar.scrolled .nav-logo {
+      color: #12372A;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+    }
+    .nav-links a {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 500;
+      font-size: 0.85rem;
+      letter-spacing: 0.02em;
+      color: rgba(255, 255, 255, 0.85);
+      transition: color 0.3s;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #C8A45D;
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #fff;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    .navbar.scrolled .nav-links a {
+      color: #202020;
+    }
+    .navbar.scrolled .nav-links a:hover {
+      color: #12372A;
+    }
+
+    .nav-cta {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+    }
+    .nav-cta .btn {
+      padding: 0.5rem 1.4rem;
+      font-size: 0.75rem;
+      min-height: 40px;
+    }
+    .nav-cta .btn-primary {
+      background: #C8A45D;
+      color: #fff;
+    }
+    .nav-cta .btn-primary:hover {
+      background: #b8944a;
+    }
+    .nav-cta .btn-secondary {
+      border-color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .nav-cta .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: #fff;
+      color: #fff;
+    }
+    .navbar.scrolled .nav-cta .btn-secondary {
+      border-color: #12372A;
+      color: #12372A;
+    }
+    .navbar.scrolled .nav-cta .btn-secondary:hover {
+      background: #12372A;
+      color: #fff;
+    }
+
+    /* Mobile Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 5px;
+      z-index: 1001;
+    }
+    .hamburger span {
+      display: block;
+      width: 28px;
+      height: 2px;
+      background: #fff;
+      transition: all 0.3s ease;
+    }
+    .navbar.scrolled .hamburger span {
+      background: #12372A;
+    }
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      height: 100vh;
+      min-height: 700px;
+      background: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 2rem;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(18, 55, 42, 0.6) 0%, rgba(0, 0, 0, 0.2) 100%);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+      color: #fff;
+      animation: heroFadeIn 1.8s ease forwards;
+    }
+    .hero-label {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #C8A45D;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.2s forwards;
+    }
+    .hero h1 {
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 1.05;
+      margin: 0.5rem 0 1rem;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.4s forwards;
+    }
+    .hero h1 span {
+      display: block;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      font-weight: 300;
+      opacity: 0.9;
+      max-width: 500px;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.6s forwards;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.8s forwards;
+    }
+    .hero-btns .btn {
+      padding: 0.9rem 2.5rem;
+    }
+    .hero-btns .btn-primary {
+      background: #C8A45D;
+      color: #fff;
+    }
+    .hero-btns .btn-primary:hover {
+      background: #b8944a;
+    }
+    .hero-btns .btn-secondary {
+      border-color: rgba(255, 255, 255, 0.6);
+      color: #fff;
+    }
+    .hero-btns .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: #fff;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .scroll-indicator .line {
+      width: 1px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.3);
+      position: relative;
+    }
+    .scroll-indicator .line::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60%;
+      background: #C8A45D;
+      animation: scrollLine 2s ease-in-out infinite;
+    }
+    @keyframes scrollLine {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+    }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes heroFadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* ---------- SECTIONS ---------- */
+    section {
+      padding: 100px 0;
+    }
+    .section-bg-cream {
+      background: #F8F4EC;
+    }
+    .section-bg-white {
+      background: #fff;
+    }
+    .section-bg-dark {
+      background: #12372A;
+      color: #fff;
+    }
+
+    /* ---------- HALAL SECTION ---------- */
+    .halal-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .halal-image img {
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+    .halal-text .gold-line {
+      width: 60px;
+      height: 2px;
+      background: #C8A45D;
+      margin: 1.5rem 0 1.2rem;
+    }
+    .halal-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    .halal-features li {
+      font-weight: 500;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .halal-features li::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #C8A45D;
+      border-radius: 50%;
+    }
+
+    /* ---------- DISHES ---------- */
+    .dish-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .dish-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+      transition: all 0.5s ease;
+      cursor: default;
+    }
+    .dish-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    }
+    .dish-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .dish-card:hover img {
+      transform: scale(1.04);
+    }
+    .dish-info {
+      padding: 1.8rem 1.5rem 2rem;
+    }
+    .dish-info h3 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    .dish-info p {
+      color: #5a5a5a;
+      font-size: 0.9rem;
+      font-weight: 300;
+      margin: 0.5rem 0 1rem;
+    }
+    .dish-info .price {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #12372A;
+    }
+    .dish-info .view-link {
+      display: inline-block;
+      margin-top: 0.8rem;
+      font-weight: 500;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      color: #C8A45D;
+      transition: all 0.3s;
+    }
+    .dish-info .view-link::after {
+      content: ' →';
+      transition: transform 0.3s;
+    }
+    .dish-card:hover .view-link::after {
+      transform: translateX(4px);
+    }
+
+    /* ---------- MENU ---------- */
+    .menu-categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2.5rem;
+      margin: 2rem 0 2.5rem;
+      justify-content: center;
+    }
+    .menu-categories button {
+      background: none;
+      border: none;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      color: rgba(255, 255, 255, 0.6);
+      cursor: pointer;
+      padding: 0.3rem 0;
+      transition: all 0.3s;
+      position: relative;
+    }
+    .menu-categories button.active {
+      color: #fff;
+    }
+    .menu-categories button.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #C8A45D;
+    }
+    .menu-categories button:hover {
+      color: #fff;
+    }
+    .menu-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .menu-item .item-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+    .menu-item .item-desc {
+      font-size: 0.8rem;
+      opacity: 0.6;
+      font-weight: 300;
+      display: block;
+      margin-top: 0.1rem;
+    }
+    .menu-item .item-price {
+      font-weight: 600;
+      color: #C8A45D;
+      white-space: nowrap;
+      margin-left: 1rem;
+    }
+    .menu-cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    /* ---------- DELIVERY ---------- */
+    .delivery-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .delivery-image img {
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .delivery-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    .delivery-features li {
+      font-weight: 500;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .delivery-features li::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #C8A45D;
+      border-radius: 50%;
+    }
+
+    /* ---------- REVIEWS ---------- */
+    .review-slider {
+      max-width: 750px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      padding: 0 2rem;
+    }
+    .review-slide {
+      display: none;
+      animation: fadeUp 0.6s ease forwards;
+    }
+    .review-slide.active {
+      display: block;
+    }
+    .review-slide blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      font-style: italic;
+      color: #202020;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+    .review-slide .review-author {
+      font-weight: 500;
+      color: #5a5a5a;
+      letter-spacing: 0.05em;
+    }
+    .review-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+    .review-controls button {
+      background: none;
+      border: 1px solid #d0d0d0;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      color: #202020;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .review-controls button:hover {
+      border-color: #12372A;
+      background: #12372A;
+      color: #fff;
+    }
+    .review-counter {
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: #5a5a5a;
+      letter-spacing: 0.05em;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #12372A;
+      color: #fff;
+      padding: 80px 0 30px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      margin-bottom: 2rem;
+    }
+    .footer-brand h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .footer-brand small {
+      display: block;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 300;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.6;
+      margin-bottom: 0.5rem;
+    }
+    .footer-brand p {
+      opacity: 0.6;
+      font-weight: 300;
+      max-width: 300px;
+    }
+    .footer-col h4 {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      color: #C8A45D;
+    }
+    .footer-col ul li {
+      margin-bottom: 0.8rem;
+    }
+    .footer-col ul li a {
+      opacity: 0.7;
+      font-weight: 300;
+      transition: opacity 0.3s;
+      font-size: 0.95rem;
+    }
+    .footer-col ul li a:hover {
+      opacity: 1;
+    }
+    .footer-socials {
+      display: flex;
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+    .footer-socials a {
+      opacity: 0.6;
+      transition: opacity 0.3s;
+      font-size: 0.9rem;
+    }
+    .footer-socials a:hover {
+      opacity: 1;
+    }
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.8rem;
+      opacity: 0.4;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+    }
+
+    /* ---------- SCROLL ANIMATIONS ---------- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: all 0.8s ease;
+    }
+    .reveal-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: all 0.8s ease;
+    }
+    .reveal-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ---------- RESPONSIVE (MOBILE FIRST) ---------- */
+    @media (max-width: 1024px) {
+      .section-title {
+        font-size: 2.8rem;
+      }
+      .dish-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      /* Navbar */
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        max-width: 320px;
+        height: 100vh;
+        background: #F8F4EC;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transition: right 0.4s ease;
+        box-shadow: -10px 0 40px rgba(0, 0, 0, 0.05);
+      }
+      .nav-links.open {
+        right: 0;
+      }
+      .nav-links a {
+        color: #202020 !important;
+        font-size: 1.2rem;
+      }
+      .nav-links a::after {
+        background: #C8A45D;
+      }
+      .nav-cta {
+        display: none;
+      }
+      .hamburger {
+        display: flex;
+      }
+      .navbar {
+        padding: 0 1.5rem;
+      }
+
+      /* Hero */
+      .hero {
+        min-height: 100vh;
+        padding: 0 1.5rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+      .hero p {
+        font-size: 1rem;
+        max-width: 100%;
+      }
+      .hero-btns {
+        justify-content: center;
+      }
+      .hero-btns .btn {
+        padding: 0.8rem 1.8rem;
+        font-size: 0.85rem;
+      }
+      .scroll-indicator {
+        display: none;
+      }
+
+      /* Sections */
+      section {
+        padding: 70px 0;
+      }
+      .section-title {
+        font-size: 2.4rem;
+      }
+      .section-sub {
+        font-size: 1rem;
+      }
+
+      /* Halal Grid */
+      .halal-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .halal-image img {
+        height: 280px;
+      }
+      .halal-features {
+        gap: 1rem;
+      }
+
+      /* Dishes */
+      .dish-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .dish-card img {
+        height: 220px;
+      }
+
+      /* Menu */
+      .menu-items {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+      }
+      .menu-categories {
+        gap: 0.8rem 1.5rem;
+      }
+      .menu-categories button {
+        font-size: 0.8rem;
+      }
+
+      /* Delivery */
+      .delivery-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .delivery-image img {
+        height: 250px;
+      }
+
+      /* Reviews */
+      .review-slide blockquote {
+        font-size: 1.5rem;
+      }
+
+      /* Footer */
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+
+      .container {
+        padding: 0 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .section-title {
+        font-size: 2rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .review-controls {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <header class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-logo">
+      DELICIOUS
+      <small>Restaurant</small>
+    </div>
+
+    <ul class="nav-links" id="navLinks" role="menubar">
+      <li role="none"><a href="#" role="menuitem">Home</a></li>
+      <li role="none"><a href="#" role="menuitem">Menu</a></li>
+      <li role="none"><a href="#" role="menuitem">About</a></li>
+      <li role="none"><a href="#" role="menuitem">Gallery</a></li>
+      <li role="none"><a href="#" role="menuitem">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="#" class="btn btn-secondary">Order Online</a>
+      <a href="#" class="btn btn-primary">Book a Table</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- ====== MAIN ====== -->
+  <main>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="home" aria-label="Hero banner">
+      <div class="hero-content">
+        <div class="hero-label">Delicious Restaurant</div>
+        <h1>
+          Authentic Flavours.
+          <span>Deliciously Halal.</span>
+        </h1>
+        <p>
+          Experience beautifully prepared halal cuisine in London, made with quality ingredients and authentic flavours.
+        </p>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-primary">Explore Menu</a>
+          <a href="#" class="btn btn-secondary">Order Online</a>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        Scroll to discover
+        <div class="line"></div>
+      </div>
+    </section>
+
+    <!-- ====== 100% HALAL ====== -->
+    <section class="section-bg-cream" aria-labelledby="halal-heading">
+      <div class="container halal-grid">
+        <div class="halal-image reveal-left">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fresh halal ingredients and beautifully prepared food" loading="lazy" />
+        </div>
+        <div class="halal-text reveal-right">
+          <span class="section-label">100% Halal</span>
+          <h2 id="halal-heading" class="section-title">Made With Quality. Served With Confidence.</h2>
+          <p class="section-sub">
+            Every dish at Delicious Restaurant is prepared with halal ingredients, carefully selected for quality, freshness and flavour.
+          </p>
+          <div class="gold-line"></div>
+          <ul class="halal-features">
+            <li>100% Halal Ingredients</li>
+            <li>Freshly Prepared</li>
+            <li>Authentic Flavours</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SIGNATURE DISHES ====== -->
+    <section class="section-bg-white" aria-labelledby="dishes-heading">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-label">Signature Dishes</span>
+          <h2 id="dishes-heading" class="section-title">Favourites Made Delicious</h2>
+          <p class="section-sub mx-auto">
+            A selection of favourites, prepared fresh and served with the Delicious touch.
+          </p>
+        </div>
+        <div class="dish-grid">
+          <article class="dish-card reveal">
+            <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Grilled Lamb Chops" loading="lazy" />
+            <div class="dish-info">
+              <h3>Grilled Lamb Chops</h3>
+              <p>Tender lamb seasoned with signature spices and grilled to perfection.</p>
+              <span class="price">£18.95</span>
+              <span class="view-link">View Dish</span>
+            </div>
+          </article>
+          <article class="dish-card reveal">
+            <img src="https://images.unsplash.com/photo-1588166524941-3bf61b9c6c6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chicken Tikka" loading="lazy" />
+            <div class="dish-info">
+              <h3>Chicken Tikka</h3>
+              <p>Marinated chicken grilled with aromatic spices.</p>
+              <span class="price">£12.95</span>
+              <span class="view-link">View Dish</span>
+            </div>
+          </article>
+          <article class="dish-card reveal">
+            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lamb Biryani" loading="lazy" />
+            <div class="dish-info">
+              <h3>Lamb Biryani</h3>
+              <p>Fragrant basmati rice cooked with tender lamb and aromatic spices.</p>
+              <span class="price">£15.95</span>
+              <span class="view-link">View Dish</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== MENU EXPERIENCE ====== -->
+    <section class="section-bg-dark" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-label">The Menu</span>
+          <h2 id="menu-heading" class="section-title">Something For Every Craving</h2>
+          <p class="section-sub mx-auto" style="color: rgba(255,255,255,0.7);">
+            Explore our selection of freshly prepared halal dishes, from traditional favourites to modern dining classics.
+          </p>
+        </div>
+
+        <div class="menu-categories" role="tablist" aria-label="Menu categories">
+          <button class="active" data-category="starters" role="tab">Starters</button>
+          <button data-category="grills" role="tab">Grills</button>
+          <button data-category="main" role="tab">Main Course</button>
+          <button data-category="rice" role="tab">Rice &amp; Biryani</button>
+        </div>
+
+        <div class="menu-items" id="menuItems">
+          <!-- Items will be injected by JS -->
+        </div>
+
+        <div class="menu-cta">
+          <a href="#" class="btn btn-gold">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== DELICIOUS, DELIVERED ====== -->
+    <section class="section-bg-cream" aria-labelledby="delivery-heading">
+      <div class="container delivery-grid">
+        <div class="delivery-text reveal-left">
+          <span class="section-label">Delicious, Delivered</span>
+          <h2 id="delivery-heading" class="section-title">Your Favourite Food, Delivered To Your Door.</h2>
+          <p class="section-sub">
+            Enjoy your favourite halal dishes from the comfort of your home. Order online and let Delicious bring the taste to your doorstep.
+          </p>
+          <ul class="delivery-features">
+            <li>Freshly Prepared</li>
+            <li>Carefully Packed</li>
+            <li>Delivered To Your Door</li>
+          </ul>
+          <div style="margin-top: 2rem;">
+            <a href="#" class="btn btn-primary">Order Online</a>
+          </div>
+        </div>
+        <div class="delivery-image reveal-right">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Delicious food delivery packaging" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== REVIEWS ====== -->
+    <section class="section-bg-white" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-label">What Our Guests Say</span>
+          <h2 id="reviews-heading" class="section-title">A Taste Worth Talking About</h2>
+        </div>
+        <div class="review-slider reveal">
+          <div class="review-slide active">
+            <blockquote>“Beautiful food, excellent service and a wonderful dining experience.”</blockquote>
+            <div class="review-author">— Guest Review</div>
+          </div>
+          <div class="review-slide">
+            <blockquote>“The best halal restaurant in London. The lamb chops are unforgettable.”</blockquote>
+            <div class="review-author">— Guest Review</div>
+          </div>
+          <div class="review-slide">
+            <blockquote>“Incredible flavours and a lovely atmosphere. Highly recommended.”</blockquote>
+            <div class="review-author">— Guest Review</div>
+          </div>
+          <div class="review-controls">
+            <button id="prevReview" aria-label="Previous review">‹</button>
+            <span class="review-counter" id="reviewCounter">01 / 03</span>
+            <button id="nextReview" aria-label="Next review">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>DELICIOUS</h2>
+          <small>Restaurant</small>
+          <p>Authentic Flavours. Deliciously Halal.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Dining</h4>
+          <ul>
+            <li><a href="#">Order Online</a></li>
+            <li><a href="#">Book a Table</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <ul>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Opening Hours</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Delicious Restaurant. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== JAVASCRIPT ====== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      // ---------- NAVBAR SCROLL ----------
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 60) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // ---------- HAMBURGER MENU ----------
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+      hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navLinks.classList.toggle('open');
+        const expanded = this.classList.contains('active');
+        this.setAttribute('aria-expanded', expanded);
+      });
+      // Close menu on link click (mobile)
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // ---------- SCROLL REVEAL (Intersection Observer) ----------
+      const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -30px 0px'
+      });
+      revealElements.forEach(el => observer.observe(el));
+
+      // ---------- MENU DATA ----------
+      const menuData = {
+        starters: [
+          { name: 'Soup of the Day', desc: 'Freshly prepared with seasonal ingredients.', price: '£6.95' },
+          { name: 'Garlic Bread', desc: 'Toasted bread with garlic butter and herbs.', price: '£4.95' },
+          { name: 'Chicken Wings', desc: 'Spicy grilled chicken wings with dip.', price: '£7.50' },
+        ],
+        grills: [
+          { name: 'Grilled Lamb Chops', desc: 'Tender lamb with signature spices.', price: '£18.95' },
+          { name: 'Chicken Tikka', desc: 'Marinated chicken grilled to perfection.', price: '£12.95' },
+          { name: 'Seekh Kebab', desc: 'Minced lamb skewers with aromatic spices.', price: '£11.95' },
+        ],
+        main: [
+          { name: 'Chicken Karahi', desc: 'Classic curry with fresh tomatoes and ginger.', price: '£14.95' },
+          { name: 'Lamb Handi', desc: 'Slow-cooked lamb in a rich, creamy sauce.', price: '£16.95' },
+          { name: 'Vegetable Curry', desc: 'Mixed vegetables in a light spiced sauce.', price: '£10.95' },
+        ],
+        rice: [
+          { name: 'Lamb Biryani', desc: 'Fragrant basmati with tender lamb.', price: '£15.95' },
+          { name: 'Chicken Biryani', desc: 'Aromatic rice with spiced chicken.', price: '£13.95' },
+          { name: 'Plain Basmati Rice', desc: 'Steamed basmati rice.', price: '£4.50' },
+        ]
+      };
+
+      const menuItemsContainer = document.getElementById('menuItems');
+      const categoryButtons = document.querySelectorAll('.menu-categories button');
+
+      function renderMenu(category) {
+        const items = menuData[category] || menuData.starters;
+        menuItemsContainer.innerHTML = items.map(item => `
+          <div class="menu-item">
+            <div>
+              <span class="item-name">${item.name}</span>
+              <span class="item-desc">${item.desc}</span>
+            </div>
+            <span class="item-price">${item.price}</span>
+          </div>
+        `).join('');
+      }
+
+      // Set default
+      renderMenu('starters');
+
+      categoryButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          categoryButtons.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          const category = this.dataset.category;
+          renderMenu(category);
+        });
+      });
+
+      // ---------- REVIEWS SLIDER ----------
+      const slides = document.querySelectorAll('.review-slide');
+      const prevBtn = document.getElementById('prevReview');
+      const nextBtn = document.getElementById('nextReview');
+      const counter = document.getElementById('reviewCounter');
+      let currentSlide = 0;
+      const totalSlides = slides.length;
+
+      function updateSlider(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('active', i === index);
+        });
+        counter.textContent = String(index + 1).padStart(2, '0') + ' / ' + String(totalSlides).padStart(2, '0');
+      }
+
+      prevBtn.addEventListener('click', function() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateSlider(currentSlide);
+      });
+      nextBtn.addEventListener('click', function() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateSlider(currentSlide);
+      });
+
+      // Initialize counter
+      updateSlider(0);
+
+    });
+  </script>
+
+</body>
+</html>
